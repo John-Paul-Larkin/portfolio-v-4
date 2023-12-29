@@ -1,12 +1,20 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "radial-bg":
+          // "background: rgb(75,85,118);
+          "radial-gradient(circle, #4f5c8c, #45589e, #3a54b0, #2e4fc1, #2448d1);",
       },
       maxWidth: {
         "container-width": "100rem",
@@ -18,7 +26,10 @@ const config: Config = {
       colors: {
         "overall-bg": "hsl(227, 28%, 43%)",
         "box-bg": "hsl(111, 7%, 20%)",
+
         cream: "hsl(0, 0%, 85%)",
+        navy: "hsl(227, 47%, 24%)",
+        // "bg-color": "hsl(227, 28%, 43%)",
       },
 
       gridTemplateRows: {
