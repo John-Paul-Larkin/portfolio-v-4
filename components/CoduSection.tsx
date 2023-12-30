@@ -8,11 +8,13 @@ export default function CoduSection() {
   return (
     <section className="mx-auto grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem] lg:h-[30rem]">
       <div className="bg-space relative flex h-full flex-col  overflow-hidden rounded-[1rem] lg:flex-row">
-        <div className="h-[24rem] bg-red-500... text-white text-[1rem]...">
-          <h3 className="bg-yellow-300... text-3xl m-[1rem] font-extrabold">Open Source</h3>
+        <div className="bg-red-500... text-[1rem]... h-[24rem] text-white">
+          <h3 className="bg-yellow-300... m-[1rem] text-3xl font-extrabold">
+            Open Source
+          </h3>
           <p className="m-[1rem]">
-            Codú is Ireland's largest coding community. The perfect place to
-            learn, contribute and network with like minded individuals.{" "}
+            Codú is Ireland`&apos;`s largest coding community. The perfect place
+            to learn, contribute and network with like minded individuals.
           </p>
           <p className="m-[1rem]">
             The community afforded me the opportunity to actively participate in
@@ -32,9 +34,7 @@ export default function CoduSection() {
             />
           </div>
 
-          <p
-            className="bg-blue-200... pt-[1rem] text-2xl font-extrabold  text-white"
-          >
+          <p className="bg-blue-200... pt-[1rem] text-2xl font-extrabold  text-white">
             A{" "}
             <span
               className=" bg-gradient-to-r from-orange-600   to-red-900 

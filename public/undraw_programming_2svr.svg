@@ -85,7 +85,7 @@
     </g>
     <path d="M763.44,656.57s3.17,11.5,0,21.5S763.44,656.57,763.44,656.57Z" transform="translate(-79.34 -172.91)" opacity="0.1"/>
     <path d="M776.94,668.3s1.33,14.6-1.67,17.19S776.94,668.3,776.94,668.3Z" transform="translate(-79.34 -172.91)" opacity="0.1"/>
-    <line x1="198.99" y1="342.86" x2="300.6" y2="341.86" fill="none" stroke="#43a047" stroke-miterlimit="10" stroke-width="2"/>
-    <line x1="198.99" y1="355.33" x2="300.6" y2="354.34" fill="none" stroke="#43a047" stroke-miterlimit="10" stroke-width="2"/>
-    <line x1="198.99" y1="367.81" x2="300.6" y2="366.81" fill="none" stroke="#43a047" stroke-miterlimit="10" stroke-width="2"/>
+    <line x1="198.99" y1="342.86" x2="300.6" y2="341.86" fill="none" stroke="#43a047" stroke-miterlimit="10" strokeWidth="2"/>
+    <line x1="198.99" y1="355.33" x2="300.6" y2="354.34" fill="none" stroke="#43a047" stroke-miterlimit="10" strokeWidth="2"/>
+    <line x1="198.99" y1="367.81" x2="300.6" y2="366.81" fill="none" stroke="#43a047" stroke-miterlimit="10" strokeWidth="2"/>
 </svg>
