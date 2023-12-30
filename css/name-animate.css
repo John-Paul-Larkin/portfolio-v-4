@@ -130,8 +130,8 @@
 
 
 .tree path:nth-child(1) {
-  stroke-dashoffset: 300px;
-  stroke-dasharray: 300px;
+  stroke-dashoffset: 1000px;
+  stroke-dasharray: 1000px;
   /* stroke-width: 0; */
 
 }
@@ -140,7 +140,7 @@
 .tree path:nth-child(1) {
   fill: black;
   stroke: black;
-  stroke-width: 0.5;
-  animation: lineanim 5s ease 3s forwards;
+  stroke-width: 1;
+  animation: lineanim 15s ease 4s forwards;
   /* animation-iteration-count: infinite; */
 }

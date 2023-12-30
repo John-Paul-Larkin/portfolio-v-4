@@ -15,7 +15,7 @@ export default function Home() {
 
       {/* <section className="min-h-screen... mx-auto grid max-w-container-width grid-cols-4 grid-rows-3 gap-[2rem] rounded-[1rem] bg-overall-bg p-[2rem]">
        */}
-      <section className="min-h-screen... bg-overall-bg... mx-auto grid max-w-container-width grid-cols-4 grid-rows-threeBox gap-[2rem] rounded-[1rem] p-[2rem] ">
+      <section className="min-h-screen... bg-overall-bg... mx-auto grid max-w-container-width grid-cols-4 grid-rows-threeBox gap-[2rem] rounded-[1rem] p-[1rem] ">
         <HeroBannerName />
 
         <div className="bg-red-400... col-span-2 row-span-2 overflow-hidden rounded-[1rem]">
@@ -109,11 +109,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="min-h-screen... mx-auto mt-[2rem] grid max-w-container-width rounded-[1rem] bg-overall-bg p-[2rem]">
+      <section className="mx-auto grid max-w-container-width overflow-hidden rounded-[1rem] p-[1rem] h-[30rem]">
+        <div className="bg-space rounded-[1rem] h-full relative">
+          
+
+        <Image
+              src="/moon.png"
+              // height={4864}
+              // width={3648}
+              fill={true}
+              alt="man sitting in front of multiple monitors"
+              style={{ objectFit: "cover" }}
+              priority={true}
+            />
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </section>
+
+      {/* <section className="min-h-screen... mx-auto mt-[2rem] grid max-w-container-width rounded-[1rem] bg-overall-bg p-[2rem]">
         <div className=" m-[2rem] h-[50rem] rounded-[1rem] bg-white ">
           <TreeAndRoots />
         </div>
-      </section>
+      </section> */}
       <a href="http://localhost:3000/">Visit W3Schools</a>
     </main>
   );

@@ -17,6 +17,8 @@ const config: Config = {
           "radial-gradient(circle, #4f5c8c, #45589e, #3a54b0, #2e4fc1, #2448d1);",
 
         dots: "url('/dots.svg')",
+        space: "url('/coduBg.jpeg')",
+
       },
       maxWidth: {
         "container-width": "100rem",
@@ -32,6 +34,7 @@ const config: Config = {
         cream: "hsl(0, 0%, 85%)",
         // "bg-color": "hsl(227, 28%, 43%)",
         treeBG: "#f5efea",
+        green:"#40c2a6",
         navy: {
           100: "hsl(227, 47%, 24%)",
           300: "hsl(227, 57%, 34%)",

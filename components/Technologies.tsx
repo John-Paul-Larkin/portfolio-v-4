@@ -5,7 +5,7 @@ import TreeAndRoots from "./TreeAndRoots";
 
 export default function Technologies() {
   return (
-    <div className=" bg-no-repeat... bg-treeBG...  h-full w-full ">
+    <div className=" bg-no-repeat... bg-green  h-full w-full ">
       {/* <motion.div
         initial={{ y: "10%", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
