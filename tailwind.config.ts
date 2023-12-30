@@ -30,7 +30,10 @@ const config: Config = {
       colors: {
         "overall-bg": "hsl(227, 28%, 43%)",
         "box-bg": "hsl(111, 7%, 20%)",
+        codeGradient:"hsla(336, 72%, 52%, 1), hsla(26, 95%, 61%, 1)",
 
+        coduGradient:"linear-gradient(to top, hsla(336, 72%, 52%, 1), hsla(26, 95%, 61%, 1))",
+        coduColor:'#f17f06',
         cream: "hsl(0, 0%, 85%)",
         // "bg-color": "hsl(227, 28%, 43%)",
         treeBG: "#f5efea",
