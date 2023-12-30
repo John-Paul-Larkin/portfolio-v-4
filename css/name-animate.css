@@ -1,12 +1,11 @@
 .hero-wrapper {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../../Assets/Images/benchCompressed.webp"); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../../Assets/Images/benchCompressed.webp");
   background-size: cover;
   height: 100vh;
-  /* width: 90vw; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
-  position: relative;
+  position: relative; */
 }
 
 .fullname-lrg-wrapper {
@@ -34,14 +33,16 @@
   stroke: white;
   stroke-width: 0.5;
   animation: lineanim 5s ease 0.7s forwards;
+  /* animation-iteration-count: infinite; */
 }
 
-.fullname-lrg-screen path:nth-child(1),
-.fullname-lrg-screen path:nth-child(5),
-.fullname-lrg-screen path:nth-child(9) {
+.fullname-lrg-screen path:nth-child(2),
+.fullname-lrg-screen path:nth-child(6),
+.fullname-lrg-screen path:nth-child(10) {
   fill: white;
   stroke: white;
-  animation: lineanim 10s ease 0.7s forwards;
+  animation: lineanim 5s ease 0.7s forwards;
+  /* animation-iteration-count: infinite; */
 }
 
 .fullname-lrg-screen path:nth-child(1) {
@@ -115,8 +116,31 @@
   }
 }
 
-/* @keyframes oppacityanim {
-  to {
-    opacity: 1;
-  }
-} */
+
+
+
+
+
+.roots-curve {
+  /* border-top-left-radius: 50%; */
+  /* border-top-right-radius: 50%; */
+  /* border-radius: 0 0 50% 10% / 50px; */
+  /* transform: rotate(20deg); */
+}
+
+
+.tree path:nth-child(1) {
+  stroke-dashoffset: 300px;
+  stroke-dasharray: 300px;
+  /* stroke-width: 0; */
+
+}
+
+
+.tree path:nth-child(1) {
+  fill: black;
+  stroke: black;
+  stroke-width: 0.5;
+  animation: lineanim 5s ease 3s forwards;
+  /* animation-iteration-count: infinite; */
+}

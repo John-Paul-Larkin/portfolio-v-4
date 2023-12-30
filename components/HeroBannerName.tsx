@@ -33,12 +33,13 @@ export default function HeroBannerName() {
 
   return (
     <section className=" bg-box-bg... col-span-4  flex h-full ">
-      <div className="h-box-height flex w-[30%] items-center rounded-[2rem] bg-box-bg  pl-[2rem] ">
+      <div className="h-box-height flex w-[30%] items-center rounded-[2rem] bg-box-bg pl-[2rem] ">
         <div className=" w-full text-[4rem] font-[700] leading-[4rem] tracking-[-3px] text-white ">
           <div className="overflow-hidden">
             <motion.p
               initial={{ y: "100%" }}
-              animate={{ y: "0%" }}
+              whileInView={{ y: "0%" }}
+              viewport={{ once: true }}
               transition={{ delay: 0, duration: 0.4 }}
             >
               Hello!
@@ -47,7 +48,8 @@ export default function HeroBannerName() {
           <div className="overflow-hidden">
             <motion.p
               initial={{ y: "100%" }}
-              animate={{ y: "0%" }}
+              whileInView={{ y: "0%" }}
+              viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               My name
@@ -57,7 +59,8 @@ export default function HeroBannerName() {
           <div className="overflow-hidden">
             <motion.p
               initial={{ y: "100%" }}
-              animate={{ y: "0%" }}
+              whileInView={{ y: "0%" }}
+              viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               is
@@ -67,14 +70,18 @@ export default function HeroBannerName() {
       </div>
 
       <div
-        className="fullname-lrg-wrapper bg-green-500... relative  flex w-full items-center justify-center rounded-[2rem]"
+        className="fullname-lrg-wrapper bg-green-500... relative  flex w-full h-box-height items-center justify-center rounded-[2rem]"
         ref={wrapperLrgRef}
       >
         {/* <div className="relative flex h-full w-full items-center justify-center"> */}
         <motion.div
           initial={{ width: "0", x: "-2rem" }}
-          animate={{ width: "calc(100% + 2rem)" }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          whileInView={{ width: "calc(100% + 2rem)" }}
+
+          viewport={{ once: true }}
+
+
+          transition={{ delay: 0.9, duration: 1 }}
           className="z-20... absolute  left-0 flex  h-full w-full items-center justify-center overflow-hidden rounded-r-[2rem] bg-box-bg"
         >
           <svg

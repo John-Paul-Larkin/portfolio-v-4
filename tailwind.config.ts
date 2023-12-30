@@ -15,6 +15,8 @@ const config: Config = {
         "radial-bg":
           // "background: rgb(75,85,118);
           "radial-gradient(circle, #4f5c8c, #45589e, #3a54b0, #2e4fc1, #2448d1);",
+
+        dots: "url('/dots.svg')",
       },
       maxWidth: {
         "container-width": "100rem",
@@ -28,12 +30,17 @@ const config: Config = {
         "box-bg": "hsl(111, 7%, 20%)",
 
         cream: "hsl(0, 0%, 85%)",
-        navy: "hsl(227, 47%, 24%)",
         // "bg-color": "hsl(227, 28%, 43%)",
+        treeBG: "#f5efea",
+        navy: {
+          100: "hsl(227, 47%, 24%)",
+          300: "hsl(227, 57%, 34%)",
+          600: "hsl(227, 57%, 40%)",
+        },
       },
 
       gridTemplateRows: {
-        threeBox: "1fr 1fr 1fr",
+        threeBox: "auto 1fr 1fr",
         destinationDesktop: "auto 1fr auto",
         crewMobile: "auto 1fr auto",
         crewDesktop: "auto 1fr",
