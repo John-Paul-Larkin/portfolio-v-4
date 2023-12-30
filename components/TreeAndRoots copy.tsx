@@ -12825,7 +12825,7 @@ export default function TreeAndRoots() {
         initial={{ y: "0%", opacity: 1 }}
         whileInView={{ y: "0%", opacity: 0 }}
         transition={{ delay: 0, duration: 5 }}
-        className="bg-red-500... absolute top-[42%] z-40 h-[60%] w-full bg-overall-bg bg-white"
+        className="bg-red-500... absolute top-[42%] z-40 h-[60%] w-full bg-overall-bg... bg-white..."
       ></motion.div>
 
       <div className="relative top-[-50%] z-50 grid hidden... w-full grid-cols-3 grid-rows-1 gap-[1rem] p-[1rem] text-[18px] text-white">

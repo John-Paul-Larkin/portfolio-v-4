@@ -18,7 +18,6 @@ const config: Config = {
 
         dots: "url('/dots.svg')",
         space: "url('/coduBg.jpeg')",
-
       },
       maxWidth: {
         "container-width": "100rem",
@@ -30,14 +29,15 @@ const config: Config = {
       colors: {
         "overall-bg": "hsl(227, 28%, 43%)",
         "box-bg": "hsl(111, 7%, 20%)",
-        codeGradient:"hsla(336, 72%, 52%, 1), hsla(26, 95%, 61%, 1)",
+        codeGradient: "hsla(336, 72%, 52%, 1), hsla(26, 95%, 61%, 1)",
 
-        coduGradient:"linear-gradient(to top, hsla(336, 72%, 52%, 1), hsla(26, 95%, 61%, 1))",
-        coduColor:'#f17f06',
+        coduGradient:
+          "linear-gradient(to top, hsla(336, 72%, 52%, 1), hsla(26, 95%, 61%, 1))",
+        coduColor: "#f17f06",
         cream: "hsl(0, 0%, 85%)",
         // "bg-color": "hsl(227, 28%, 43%)",
         treeBG: "#f5efea",
-        green:"#40c2a6",
+        green: "#40c2a6",
         navy: {
           100: "hsl(227, 47%, 24%)",
           300: "hsl(227, 57%, 34%)",
