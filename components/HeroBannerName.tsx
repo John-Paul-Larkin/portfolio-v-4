@@ -4,19 +4,21 @@ import "/css/name-animate.css";
 
 export default function HeroBannerName() {
   return (
-    <section className="col-span-4 flex flex-col x-l:flex-row h-full...  rounded-[2rem] bg-box-bg overflow-hidden h-box-height">
-      <div className="flex bg-yellow-400 justify-center...  items-center x-l:pl-[1rem] xx-l:px-[1rem] xx-l:pr-0">
-        <div className="bg-yellow-600 flex text-[1.5rem] x-l:block x-l:text-[2.5rem] xx-l:text-[3rem] xxx-l:text-[4rem] font-[700] leading-[2.5rem] xx-l:leading-[4rem] xx-l:tracking-[-3px] text-white x-l:w-[8rem] xx-l:w-auto">
-          <p className="bg-blue-600... w-fit">Hello!</p>
-          <div className="bg-pink-300... overflow-y-hidden">
+    <section className="x-l:flex-row x-l:h-box-height l:h-[14rem] col-span-4 flex h-[10rem] flex-col overflow-hidden rounded-[2rem] bg-box-bg">
+      <div className="x-l:pl-[1rem] xx-l:px-[1rem] xx-l:pr-0  flex  items-center justify-center ">
+        <div className=" x-l:block x-l:text-[2.5rem] xx-l:text-[3rem] xxx-l:text-[4rem] xx-l:leading-[4rem] xx-l:tracking-[-3px] x-l:w-[8rem] xx-l:w-auto flex text-[1.5rem] font-[700] leading-[2.5rem] text-white mt-[2rem] x-l:mt-0">
+          <p className="x-l:w-fit ">
+            Hello! <span className="x-l:hidden">&nbsp;</span>
+          </p>
+          <div className="overflow-y-hidden ">
             <motion.p
               initial={{ y: "100%" }}
               whileInView={{ y: "0%" }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-block bg-slate-300...   xx-l:whitespace-nowrap"
+              className="xx-l:whitespace-nowrap inline-block"
             >
-              My name
+              My name <span className="x-l:hidden">&nbsp;</span>
             </motion.p>
           </div>
 
@@ -26,7 +28,7 @@ export default function HeroBannerName() {
               whileInView={{ y: "0%" }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="bg-blue-600... w-fit"
+              className=" w-fit"
             >
               is
             </motion.p>
@@ -34,8 +36,8 @@ export default function HeroBannerName() {
         </div>
       </div>
 
-      <div className="fullname-lrg-wrapper flex...  items-center... justify-center... relative h-box-height... grow ">
-        <motion.div className=" absolute... left-0...  flex h-full w-full items-center justify-center overflow-hidden px-[1rem] bg-yellow-300...">
+      <div className="fullname-lrg-wrapper relative grow">
+        <motion.div className="flex h-full w-full items-center justify-center overflow-hidden px-[1rem]">
           <motion.svg
             initial={{ x: "0%", opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -43,7 +45,7 @@ export default function HeroBannerName() {
             transition={{ delay: 0.6, duration: 1.5 }}
             width="100%"
             viewBox="0 0 159 27"
-            className="fullname-lrg-screen top-0... bg-red-600..."
+            className="fullname-lrg-screen"
             aria-labelledby="title"
           >
             <title id="title" lang="en">

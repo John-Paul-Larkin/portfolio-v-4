@@ -64,9 +64,9 @@ const config: Config = {
         tablet: "480px",
         desktop: "769px",
         "mid-desktop": "850px",
-        "lrg-desktop": "1000px",
+        "l": "400px",
 
-        
+
         "x-l": "800px",
         "xx-l": "1200px",
         "xxx-l": "1450px",

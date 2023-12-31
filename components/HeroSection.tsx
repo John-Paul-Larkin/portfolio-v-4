@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section className="mx-auto grid max-w-container-width grid-cols-4 grid-rows-threeBox gap-[2rem] rounded-[1rem] p-[1rem] ">
       <HeroBannerName />
 
-      {/* <div className="col-span-2 row-span-2 overflow-hidden rounded-[1rem]">
+      <div className="col-span-2 row-span-2 overflow-hidden rounded-[1rem]">
         <motion.div
           initial={{ x: "0%", opacity: 1 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -28,8 +28,6 @@ export default function HeroSection() {
         transition={{ delay: 0.5, duration: 0.4 }}
         className="relative row-span-1 overflow-hidden   rounded-[1rem]"
       >
-
-
         <Image
           src="/wrangler.png"
           // height={4864}
@@ -92,8 +90,8 @@ export default function HeroSection() {
             style={{ objectFit: "cover" }}
             priority={true}
           />
-        </motion.div> 
-      </div> */}
+        </motion.div>
+      </div>
     </section>
   );
 }
