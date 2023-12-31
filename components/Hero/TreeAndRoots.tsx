@@ -22,10 +22,10 @@ export default function TreeAndRoots() {
         whileInView={{ y: "100%", opacity: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 2, duration: 5 }}
-        className="bg-red-500... bg-white... absolute top-[42%] z-40 h-[60%] w-full bg-overall-bg... bg-green"
+        className="bg-red-500... bg-white... bg-overall-bg... absolute top-[42%] z-40 h-[60%] w-full bg-green"
       ></motion.div>
 
-      <div className="hidden... relative top-[-50%] z-30 grid w-full grid-cols-3 grid-rows-1 gap-[1rem] p-[1rem] text-[18px] text-white">
+      <div className="hidden relative top-[-50%] z-30 grid w-full grid-cols-3 grid-rows-1 gap-[1rem] p-[1rem] text-[18px] text-white">
         <div className="h-full w-full"></div>
 
         <div className="overflow-hidden... pt-[1rem]...">
@@ -66,7 +66,7 @@ export default function TreeAndRoots() {
             className="flex h-[2rem] items-center rounded-md bg-navy-600 pr-[1rem] shadow-md shadow-slate-600"
           >
             <p className="flex-grow pl-[2rem]">TypeScript</p>
-            <div className="relative top-[-.5rem]... w-[2rem]">
+            <div className="top-[-.5rem]... relative w-[2rem]">
               <svg viewBox="0 0 128 128" className="shadow-md shadow-slate-600">
                 <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
                 <path
@@ -89,7 +89,7 @@ export default function TreeAndRoots() {
             className="flex h-[2rem] items-center rounded-md bg-navy-600 pr-[1rem] shadow-md shadow-slate-600"
           >
             <p className="flex-grow pl-[2rem]">React</p>
-            <div className="relative  top-[-.5rem]... w-[2rem]">
+            <div className="top-[-.5rem]...  relative w-[2rem]">
               <svg
                 viewBox="0 0 128 128"
                 className="bg-white shadow-md  shadow-slate-600"
@@ -103,7 +103,7 @@ export default function TreeAndRoots() {
           </motion.div>
         </div>
 
-        <div className="overflow-hidden pt-[1rem]...">
+        <div className="pt-[1rem]... overflow-hidden">
           <motion.div
             initial={{ x: "10%", opacity: 0 }}
             whileInView={{ x: "0%", opacity: 1 }}
@@ -112,7 +112,7 @@ export default function TreeAndRoots() {
             className="flex h-[2rem] items-center rounded-md bg-navy-600 pr-[1rem] shadow-md shadow-slate-600"
           >
             <p className="flex-grow pl-[2rem]">Node</p>
-            <div className="relative  top-[-.5rem]... w-[2rem]">
+            <div className="top-[-.5rem]...  relative w-[2rem]">
               <svg
                 viewBox="0 0 128 128"
                 className="bg-white shadow-md  shadow-slate-600"

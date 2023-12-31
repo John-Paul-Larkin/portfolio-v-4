@@ -4,7 +4,7 @@ import "/css/name-animate.css";
 
 export default function HeroBannerName() {
   return (
-    <section className="x-l:flex-row x-l:h-box-height l:h-[14rem] col-span-4 flex h-[10rem] flex-col overflow-hidden rounded-[2rem] bg-box-bg">
+    <section className="x-l:flex-row x-l:h-box-height l:h-[14rem] sm:col-span-4 flex h-[10rem] flex-col overflow-hidden rounded-[2rem] bg-box-bg col-span-2">
       <div className="x-l:pl-[1rem] xx-l:px-[1rem] xx-l:pr-0  flex  items-center justify-center ">
         <div className=" x-l:block x-l:text-[2.5rem] xx-l:text-[3rem] xxx-l:text-[4rem] xx-l:leading-[4rem] xx-l:tracking-[-3px] x-l:w-[8rem] xx-l:w-auto flex text-[1.5rem] font-[700] leading-[2.5rem] text-white mt-[2rem] x-l:mt-0">
           <p className="x-l:w-fit ">

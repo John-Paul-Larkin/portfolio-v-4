@@ -6,7 +6,15 @@ import { motion } from "framer-motion";
 
 export default function CoduSection() {
   return (
-    <section className="mx-auto grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem] lg:h-[30rem]">
+    <motion.section 
+  
+            initial={{ x: "10%",opacity:0 }}
+            whileInView={{ x: "0%", opacity:1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.4 }}
+    
+    
+    className="mx-auto grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem] lg:h-[30rem]">
       <div className="relative flex h-full flex-col overflow-hidden  rounded-[1rem] bg-space lg:flex-row">
         <div className="h-[24rem] text-white">
           <h3 className="m-[1rem] text-3xl font-extrabold">Open Source</h3>
@@ -55,6 +63,6 @@ export default function CoduSection() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

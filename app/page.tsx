@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
 import CoduSection from "@/components/CoduSection";
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/Hero/HeroSection";
 
 export default function Home() {
   return (
-    <main className=" bg-overall-bg min-h-screen">
+    <main className=" min-h-screen bg-overall-bg">
       <HeroSection />
       <CoduSection />
 
