@@ -7,11 +7,9 @@ import { motion } from "framer-motion";
 export default function CoduSection() {
   return (
     <section className="mx-auto grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem] lg:h-[30rem]">
-      <div className="bg-space relative flex h-full flex-col  overflow-hidden rounded-[1rem] lg:flex-row">
-        <div className="bg-red-500... text-[1rem]... h-[24rem] text-white">
-          <h3 className="bg-yellow-300... m-[1rem] text-3xl font-extrabold">
-            Open Source
-          </h3>
+      <div className="relative flex h-full flex-col overflow-hidden  rounded-[1rem] bg-space lg:flex-row">
+        <div className="h-[24rem] text-white">
+          <h3 className="m-[1rem] text-3xl font-extrabold">Open Source</h3>
           <p className="m-[1rem]">
             Codú is Ireland`&apos;`s largest coding community. The perfect place
             to learn, contribute and network with like minded individuals.
@@ -23,24 +21,19 @@ export default function CoduSection() {
           </p>
         </div>
 
-        <div className="justify-center... w-1/2... bg-red-600... flex flex-col items-center">
-          <div className="mt-[1rem]... bg-yellow-400... relative h-[7rem] w-[80%] lg:w-[20rem]">
+        <div className="flex flex-col items-center">
+          <div className="relative h-[7rem] w-[80%] lg:w-[20rem]">
             <Image
               src="/codu.svg"
               fill={true}
               alt="codu logo"
               style={{ objectFit: "contain" }}
-              // priority={true}
             />
           </div>
 
-          <p className="bg-blue-200... pt-[1rem] text-2xl font-extrabold  text-white">
+          <p className="pt-[1rem] text-2xl font-extrabold  text-white">
             A{" "}
-            <span
-              className=" bg-gradient-to-r from-orange-600   to-red-900 
-        
-        bg-clip-text text-transparent"
-            >
+            <span className=" bg-gradient-to-r from-orange-600 to-red-900 bg-clip-text text-transparent">
               space
             </span>{" "}
             for coders
@@ -57,7 +50,6 @@ export default function CoduSection() {
                 fill={true}
                 alt="full moon"
                 style={{ objectFit: "cover" }}
-                // priority={true}
               />
             </motion.div>
           </div>

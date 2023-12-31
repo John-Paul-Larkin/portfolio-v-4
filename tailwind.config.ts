@@ -60,6 +60,17 @@ const config: Config = {
         crewDesktop: "1fr 1fr",
         technologyDesktop: "auto 1fr 1fr",
       },
+      screens: {
+        tablet: "480px",
+        desktop: "769px",
+        "mid-desktop": "850px",
+        "lrg-desktop": "1000px",
+
+        
+        "x-l": "800px",
+        "xx-l": "1200px",
+        "xxx-l": "1450px",
+      },
     },
   },
   plugins: [],

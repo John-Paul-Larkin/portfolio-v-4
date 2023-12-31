@@ -4,15 +4,8 @@ import { motion } from "framer-motion";
 export default function TreeAndRoots() {
 
 
-
-
-
-
-
-
-
   return (
-    <div className="tree...  relative h-full overflow-hidden">
+    <div className="relative h-full overflow-hidden">
       <svg
         className="z-10 h-full w-full"
         viewBox="0 0 923.384 1651.051"

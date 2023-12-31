@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function TreeAndRoots() {
   return (
-    <div className="tree  relative h-full overflow-hidden">
+    <div className="relative h-full overflow-hidden">
       <motion.svg
         initial={{ y: "5%", opacity: 0 }}
         whileInView={{ y: "0%", opacity: 1 }}

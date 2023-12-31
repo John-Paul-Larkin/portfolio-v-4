@@ -1,67 +1,32 @@
-"use client";
-
 import { motion } from "framer-motion";
 import React from "react";
-import { useEffect, useRef } from "react";
 import "/css/name-animate.css";
 
 export default function HeroBannerName() {
-  const fullnameLrgRef = useRef<SVGSVGElement>(null);
-  const wrapperLrgRef = useRef<HTMLDivElement>(null);
-
-  // useEffect(() => {
-  //   let width;
-
-  //   if (wrapperLrgRef.current && fullnameLrgRef.current) {
-  //     width = Number(wrapperLrgRef.current.offsetWidth);
-  //     fullnameLrgRef.current.style.transform = `scale(${(width / 159) * 0.9})`;
-  //   }
-
-  //   const resizeNameAnimationOnScreenChange = () => {
-  //     if (wrapperLrgRef.current && fullnameLrgRef.current) {
-  //       width = Number(wrapperLrgRef.current.offsetWidth);
-  //       fullnameLrgRef.current.style.transform = `scale(${
-  //         (width / 159) * 0.9
-  //       })`;
-  //     }
-  //   };
-
-  //   window.addEventListener("resize", resizeNameAnimationOnScreenChange);
-  //   return () =>
-  //     window.removeEventListener("resize", resizeNameAnimationOnScreenChange);
-  // }, []);
-
   return (
-    <section className=" bg-box-bg... col-span-4  flex h-full ">
-      <div className="flex h-box-height w-[30%] items-center rounded-l-[2rem] bg-box-bg pl-[2rem] ">
-        <div className=" w-full text-[4rem] font-[700] leading-[4rem] tracking-[-3px] text-white ">
-          <div className="overflow-hidden">
-            <motion.p
-              initial={{ y: "0%" }}
-              whileInView={{ y: "0%" }}
-              viewport={{ once: true }}
-              transition={{ delay: 0, duration: 0.4 }}
-            >
-              Hello!
-            </motion.p>
-          </div>
-          <div className="overflow-hidden">
+    <section className="col-span-4 flex flex-col x-l:flex-row h-full...  rounded-[2rem] bg-box-bg overflow-hidden h-box-height">
+      <div className="flex  items-center pl-[1rem] xx-l:px-[1rem] ">
+        <div className="bg-yellow-600... text-[2.5rem] xx-l:text-[3rem] xxx-l:text-[4rem] font-[700] leading-[2.5rem] xx-l:leading-[4rem] xx-l:tracking-[-3px] text-white w-[8rem] xx-l:w-auto">
+          <p className="bg-blue-600... w-fit">Hello!</p>
+          <div className="bg-pink-300... overflow-y-hidden">
             <motion.p
               initial={{ y: "100%" }}
               whileInView={{ y: "0%" }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.5 }}
+              className="inline-block bg-slate-300...   xx-l:whitespace-nowrap"
             >
               My name
             </motion.p>
           </div>
 
-          <div className="overflow-hidden">
+          <div className="overflow-y-hidden">
             <motion.p
               initial={{ y: "100%" }}
               whileInView={{ y: "0%" }}
               viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="bg-blue-600... w-fit"
             >
               is
             </motion.p>
@@ -69,34 +34,16 @@ export default function HeroBannerName() {
         </div>
       </div>
 
-      <div
-        className="fullname-lrg-wrapper bg-green-500... relative  flex h-box-height w-full items-center justify-center rounded-[2rem]"
-        ref={wrapperLrgRef}
-      >
-        {/* <div className="relative flex h-full w-full items-center justify-center"> */}
-        <motion.div
-          // initial={{ width: "0", x: "-2rem" }}
-          // whileInView={{ width: "calc(100% + 2rem)" }}
-          // viewport={{ once: true }}
-          // transition={{ delay: 0.9, duration: 1 }}
-
-          //   initial={{ width: "100%", x: "0%" ,opacity:0 }}
-          // whileInView={{ width: '100%',opacity:1}}
-          // viewport={{ once: true }}
-          // transition={{ delay: 0.9, duration: 1 }}
-
-          className="z-20... absolute  left-0 flex  h-full w-full items-center justify-center overflow-hidden rounded-r-[2rem] bg-box-bg"
-        >
+      <div className="fullname-lrg-wrapper flex...  items-center... justify-center... relative h-box-height... grow ">
+        <motion.div className=" absolute... left-0...  flex h-full w-full items-center justify-center overflow-hidden px-[1rem] bg-yellow-300...">
           <motion.svg
-            initial={{  x: "0%", opacity: 0 }}
-            whileInView={{  opacity: 1 }}
+            initial={{ x: "0%", opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.9, duration: 1 }}
-            width="90%"
-            // height="27"
+            transition={{ delay: 0.6, duration: 1.5 }}
+            width="100%"
             viewBox="0 0 159 27"
-            className="fullname-lrg-screen w-full... fixe... d top-0 "
-            ref={fullnameLrgRef}
+            className="fullname-lrg-screen top-0... bg-red-600..."
             aria-labelledby="title"
           >
             <title id="title" lang="en">
