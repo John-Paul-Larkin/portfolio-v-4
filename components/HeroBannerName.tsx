@@ -5,8 +5,8 @@ import "/css/name-animate.css";
 export default function HeroBannerName() {
   return (
     <section className="col-span-4 flex flex-col x-l:flex-row h-full...  rounded-[2rem] bg-box-bg overflow-hidden h-box-height">
-      <div className="flex  items-center pl-[1rem] xx-l:px-[1rem] ">
-        <div className="bg-yellow-600... text-[2.5rem] xx-l:text-[3rem] xxx-l:text-[4rem] font-[700] leading-[2.5rem] xx-l:leading-[4rem] xx-l:tracking-[-3px] text-white w-[8rem] xx-l:w-auto">
+      <div className="flex bg-yellow-400 justify-center...  items-center x-l:pl-[1rem] xx-l:px-[1rem] xx-l:pr-0">
+        <div className="bg-yellow-600 flex text-[1.5rem] x-l:block x-l:text-[2.5rem] xx-l:text-[3rem] xxx-l:text-[4rem] font-[700] leading-[2.5rem] xx-l:leading-[4rem] xx-l:tracking-[-3px] text-white x-l:w-[8rem] xx-l:w-auto">
           <p className="bg-blue-600... w-fit">Hello!</p>
           <div className="bg-pink-300... overflow-y-hidden">
             <motion.p
