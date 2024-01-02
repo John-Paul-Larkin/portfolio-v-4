@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import "/css/name-animate.css";
+import "/styles/name-animate.css";
 
 export default function HeroBannerName() {
   return (

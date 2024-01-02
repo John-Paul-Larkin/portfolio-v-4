@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
+import LinkedIn from "@/icons/linkedin.svg"
+
+
 
 export default function DeveloperSection() {
   return (
@@ -10,7 +13,7 @@ export default function DeveloperSection() {
       transition={{ delay: 0.5, duration: 0.4 }}
       className="relative rounded-[1rem] bg-cream sm:row-span-1"
     >
-      <div className="text-5xl font-bold">
+      <div className="text-5xl font-bold bg-slate-500">
         <div className="overflow-hidden ">
           <motion.div
             initial={{ y: "100%" }}
@@ -35,6 +38,17 @@ export default function DeveloperSection() {
           </motion.div>
         </div>
       </div>
+
+
+    <LinkedIn className="h-10 w-10"/>
+
+
+
+
+
+
+
+
     </motion.div>
   );
 }

@@ -5,7 +5,6 @@ import PhotoSection from "./PhotoSection";
 import DeveloperSection from "./DeveloperSection";
 import SvgSection from "./SvgSection";
 
-
 export default function HeroSection() {
   return (
     <section
