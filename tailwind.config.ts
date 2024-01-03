@@ -38,6 +38,7 @@ const config: Config = {
         // "bg-color": "hsl(227, 28%, 43%)",
         treeBG: "#f5efea",
         green: "#40c2a6",
+        lilac: "#A3B7FF",
         navy: {
           100: "hsl(227, 47%, 24%)",
           300: "hsl(227, 57%, 34%)",

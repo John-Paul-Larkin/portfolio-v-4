@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import TreeAndRoots from "./TreeAndRoots";
 import Tree from "@/icons/tree.svg";
 export default function Technologies() {
   return (
@@ -15,13 +14,13 @@ export default function Technologies() {
         >
           <div className="h-fit  w-fit bg-green sm:h-[40rem]">
             <div className="relative h-full overflow-hidden">
-              {/* <TreeAndRoots /> */}
 
               <motion.div
                 initial={{ y: "5%", opacity: 0 }}
                 whileInView={{ y: "0%", opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0, duration: 4 }}
+                className="z-10 h-full w-full"
               >
                 <Tree className="z-10 h-full w-full" />
               </motion.div>

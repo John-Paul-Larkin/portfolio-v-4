@@ -29,7 +29,7 @@ export default function CoduSection() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-cente">
             <div className="relative h-[7rem] w-[80%] lg:w-[20rem]">
               <Image
                 src="/codu.svg"
@@ -51,7 +51,7 @@ export default function CoduSection() {
                 className="absolute bottom-[-7rem] aspect-square h-[18rem] lg:h-[20rem]"
                 initial={{ rotate: 0 }}
                 animate={{ rotate: 360 }}
-                transition={{ duration: 80, repeat: Infinity }}
+                transition={{ duration: 80, repeat: 2 }}
               >
                 <Image
                   src="/moon.png"
