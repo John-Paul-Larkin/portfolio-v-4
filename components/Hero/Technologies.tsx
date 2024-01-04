@@ -4,16 +4,20 @@ import Tree from "@/icons/tree.svg";
 export default function Technologies() {
   return (
     <>
-      <div className="h-fit... row-span-1 overflow-hidden rounded-[1rem] bg-red-900 
+      <div
+        className="h-fit... s2:col-span-1 s2:row-span-1 
+        s4:col-span-2 s4:row-span-2 
       
-      m:col-span-1 m:row-span-1
+      s2:m-0 order-2
       
-      l:col-span-2 l:row-span-2 
-      order-2
+      row-span-1 my-4 
+      overflow-hidden
       
-      my-4 m:m-0
-
-      ">
+      rounded-[1rem] bg-green
+      s4:w-fit...
+      s4:w-[30rem]...
+      "
+      >
         <motion.div
           initial={{ x: "0%", opacity: 1 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -21,9 +25,8 @@ export default function Technologies() {
           transition={{ delay: 0.5, duration: 0.4 }}
           className="bg-yellow-800... flex h-full w-full items-center justify-center"
         >
-          <div className="h-fit  w-fit bg-green l:h-[40rem]">
+          <div className="h-fit...  s3:h-[40rem]... s4:h-fit h-[30rem] w-fit bg-green">
             <div className="relative h-full overflow-hidden">
-
               <motion.div
                 initial={{ y: "5%", opacity: 0 }}
                 whileInView={{ y: "0%", opacity: 1 }}
@@ -148,9 +151,6 @@ export default function Technologies() {
                   </motion.div>
                 </div>
               </div> */}
-
-
-
             </div>
             {/* </div> */}
           </div>

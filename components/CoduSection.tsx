@@ -12,9 +12,9 @@ export default function CoduSection() {
         whileInView={{ x: "0%", opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.4 }}
-        className="mx-auto grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem] lg:h-[30rem]"
+        className="mx-auto grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem] s6:h-[30rem]"
       >
-        <div className="relative flex h-full flex-col overflow-hidden  rounded-[1rem] bg-space lg:flex-row">
+        <div className="relative flex h-full flex-col overflow-hidden  rounded-[1rem] bg-space s6:flex-row">
           <div className="h-[24rem] text-white">
             <h3 className="m-[1rem] text-3xl font-extrabold">Open Source</h3>
             <p className="m-[1rem]">
@@ -48,7 +48,7 @@ export default function CoduSection() {
             </p>
             <div className="flex justify-center">
               <motion.div
-                className="absolute bottom-[-7rem] aspect-square h-[18rem] lg:h-[20rem]"
+                className="absolute bottom-[-7rem] aspect-square h-[18rem] s6:h-[20rem]"
                 initial={{ rotate: 0 }}
                 animate={{ rotate: 360 }}
                 transition={{ duration: 80, repeat: 2 }}

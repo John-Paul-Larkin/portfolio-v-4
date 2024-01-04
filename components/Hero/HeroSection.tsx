@@ -10,21 +10,30 @@ export default function HeroSection() {
   return (
     <section
       className="
+      s2:grid-cols-[1fr,1fr] s2:grid-rows-[repeat(5)] 
+
+      s2:gap-[1rem] 
+
+      s4:grid-cols-[1fr,1fr,auto,auto] 
+    s6:grid-cols-[1fr,1fr,1fr,1fr]
+
+    s4:grid-rows-threeBox 
     
-    mx-auto 
+    s5:gap-[2rem]
     
-    grid max-w-container-width 
+    mx-auto
+    
+    bg-yellow
     
 
-    m:grid-cols-[repeat(2,50%)] m:grid-rows-[repeat(5)] 
-
-    sm:grid-rows-threeBox sm:gap-[2rem] 
 
 
-    m:gap-[1rem]
-    rounded-[1rem]
+
+    grid
+    max-w-container-width
  
-    p-[1rem] sm:grid-cols-4 
+    rounded-[1rem] 
+    p-[1rem]
     
     "
     >
@@ -38,7 +47,7 @@ export default function HeroSection() {
 
       {/* <SvgSection /> */}
 
-      <AboutSection/>
+      <AboutSection />
     </section>
   );
 }
