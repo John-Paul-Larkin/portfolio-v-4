@@ -4,7 +4,16 @@ import Tree from "@/icons/tree.svg";
 export default function Technologies() {
   return (
     <>
-      <div className="h-fit... row-span-1 overflow-hidden rounded-[1rem] bg-red-900 sm:col-span-2 sm:row-span-2 ">
+      <div className="h-fit... row-span-1 overflow-hidden rounded-[1rem] bg-red-900 
+      
+      m:col-span-1 m:row-span-1
+      
+      l:col-span-2 l:row-span-2 
+      order-2
+      
+      my-4 m:m-0
+
+      ">
         <motion.div
           initial={{ x: "0%", opacity: 1 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -12,7 +21,7 @@ export default function Technologies() {
           transition={{ delay: 0.5, duration: 0.4 }}
           className="bg-yellow-800... flex h-full w-full items-center justify-center"
         >
-          <div className="h-fit  w-fit bg-green sm:h-[40rem]">
+          <div className="h-fit  w-fit bg-green l:h-[40rem]">
             <div className="relative h-full overflow-hidden">
 
               <motion.div
@@ -33,7 +42,7 @@ export default function Technologies() {
                 className="absolute top-[42%] z-40 h-[60%] w-full bg-green"
               ></motion.div>
 
-              <div className="hidden... relative top-[-50%] z-30 grid w-full grid-cols-3 grid-rows-1 gap-[1rem] p-[1rem] text-[18px] text-white">
+              {/* <div className="hidden... relative top-[-50%] z-30 grid w-full grid-cols-3 grid-rows-1 gap-[1rem] p-[1rem] text-[18px] text-white">
                 <div className="h-full w-full"></div>
 
                 <div className="overflow-hidden... pt-[1rem]...">
@@ -92,7 +101,6 @@ export default function Technologies() {
                   </motion.div>
                 </div>
 
-                {/* <div className="bg-slate-700... order-1... h-full w-full"></div> */}
 
                 <div className="overflow-hidden... pt-[1rem]...">
                   <motion.div
@@ -139,7 +147,10 @@ export default function Technologies() {
                     </div>
                   </motion.div>
                 </div>
-              </div>
+              </div> */}
+
+
+
             </div>
             {/* </div> */}
           </div>

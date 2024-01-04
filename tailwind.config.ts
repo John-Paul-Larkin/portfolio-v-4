@@ -38,7 +38,12 @@ const config: Config = {
         // "bg-color": "hsl(227, 28%, 43%)",
         treeBG: "#f5efea",
         green: "#40c2a6",
-        lilac: "#A3B7FF",
+        lilac: {
+          100: "hsl(227, 100%, 72%)",
+          300: "hsl(227, 100%, 77%)",
+          600: "hsl(227, 100%, 82%)",
+        },
+
         navy: {
           100: "hsl(227, 47%, 24%)",
           300: "hsl(227, 57%, 34%)",
@@ -62,12 +67,9 @@ const config: Config = {
         technologyDesktop: "auto 1fr 1fr",
       },
       screens: {
-        tablet: "480px",
-        desktop: "769px",
-        "mid-desktop": "850px",
-        "l": "400px",
-
-
+     
+        m: "400px",
+        l: "600px",
         "x-l": "800px",
         "xx-l": "1200px",
         "xxx-l": "1450px",
