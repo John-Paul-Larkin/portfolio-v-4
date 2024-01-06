@@ -8,13 +8,13 @@ export default function CoduSection() {
   return (
     <section className="overflow-hidden">
       <motion.div
-        initial={{ x: "10%", opacity: 0 }}
+        initial={{ x: "-10%", opacity: 0 }}
         whileInView={{ x: "0%", opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, margin:"0px 0px -100px 0px" }}
         transition={{ delay: 0.5, duration: 0.4 }}
-        className="mx-auto grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem] s6:h-[30rem]"
+        className="s6:h-[30rem] mx-auto grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem]"
       >
-        <div className="relative flex h-full flex-col overflow-hidden  rounded-[1rem] bg-space s6:flex-row">
+        <div className="s6:flex-row relative flex h-full flex-col  overflow-hidden rounded-[1rem] bg-space">
           <div className="h-[24rem] text-white">
             <h3 className="m-[1rem] text-3xl font-extrabold">Open Source</h3>
             <p className="m-[1rem]">
@@ -29,8 +29,8 @@ export default function CoduSection() {
             </p>
           </div>
 
-          <div className="flex flex-col items-cente">
-            <div className="relative h-[7rem] w-[80%] lg:w-[20rem]">
+          <div className="flex flex-col items-center">
+            <div className="s6:w-[20rem] relative h-[7rem] w-[80%]">
               <Image
                 src="/codu.svg"
                 fill={true}
@@ -48,7 +48,7 @@ export default function CoduSection() {
             </p>
             <div className="flex justify-center">
               <motion.div
-                className="absolute bottom-[-7rem] aspect-square h-[18rem] s6:h-[20rem]"
+                className="s6:h-[20rem] absolute bottom-[-7rem] aspect-square h-[18rem]"
                 initial={{ rotate: 0 }}
                 animate={{ rotate: 360 }}
                 transition={{ duration: 80, repeat: 2 }}
