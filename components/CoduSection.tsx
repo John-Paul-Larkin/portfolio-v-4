@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 
 export default function CoduSection() {
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden order-5 s2:col-span-2 s4:col-span-6 s6:col-span-4">
       <motion.div
-        initial={{ x: "-10%", opacity: 0 }}
-        whileInView={{ x: "0%", opacity: 1 }}
+        initial={{ x: "-10%", y:"-10%", opacity: 0 }}
+        whileInView={{ x: "0%",y:0, opacity: 1 }}
         viewport={{ once: true, margin:"0px 0px -100px 0px" }}
         transition={{ delay: 0.5, duration: 0.4 }}
-        className="s6:h-[30rem] mx-auto grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem]"
+        className="s6:h-[30rem] mx-auto... grid h-[48rem] max-w-container-width overflow-hidden rounded-[1rem] p-[1rem]... my-[1rem]"
       >
         <div className="s6:flex-row relative flex h-full flex-col  overflow-hidden rounded-[1rem] bg-space">
           <div className="h-[24rem] text-white">
@@ -50,8 +50,8 @@ export default function CoduSection() {
               <motion.div
                 className="s6:h-[20rem] absolute bottom-[-7rem] aspect-square h-[18rem]"
                 initial={{ rotate: 0 }}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 80, repeat: 2 }}
+                animate={{ rotate: 90 }}
+                transition={{ duration: 6, repeat: 0 }}
               >
                 <Image
                   src="/moon.png"

@@ -6,12 +6,12 @@ import Image from "next/image";
 export default function PhotoSection() {
   return (
     <>
-      <motion.div
+      <motion.section
         initial={{ x: "-10%", opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.4 }}
-        className="relative order-3  h-full w-full   overflow-hidden rounded-[1rem] s3:row-span-1"
+        className="border-2 s6:col-span-6 relative order-3  h-full w-full s3:col-span-6  overflow-hidden rounded-[1rem] s3:row-span-1 s5:col-span-3"
       >
         <Image
           src="/wrangler.png"
@@ -22,7 +22,7 @@ export default function PhotoSection() {
           style={{ objectFit: "cover" }}
           priority={true}
         />
-      </motion.div>
+      </motion.section>
     </>
   );
 }

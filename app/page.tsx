@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className=" min-h-screen bg-overall-bg">
       <HeroSection />
-      <CoduSection />
+      {/* <CoduSection /> */}
 
       {/* <section className="min-h-screen... mx-auto mt-[2rem] grid max-w-container-width rounded-[1rem] bg-overall-bg p-[2rem]">
         <div className=" m-[2rem] h-[50rem] rounded-[1rem] bg-white ">

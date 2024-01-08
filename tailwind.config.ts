@@ -67,6 +67,7 @@ const config: Config = {
         technologyDesktop: "auto 1fr 1fr",
       },
       screens: {
+        s1: "280px",
         s2: "400px",
         s3: "600px",
         s4: "700px",

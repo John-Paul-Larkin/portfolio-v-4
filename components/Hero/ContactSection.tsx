@@ -13,34 +13,12 @@ export default function ContactSection() {
       whileInView={{ x: 0, opacity: 1 }}
       viewport={{ once: true }}
       transition={{ delay: 0.5, duration: 0.4 }}
-      className="bg-lilac... relative flex rounded-[1rem] bg-gradient-to-r from-lilac-600 to-lilac-300 l:row-span-1  order-3 "
+      className="s5:w-[15rem]... bg-lilac... s5:col-span-1  relative flex rounded-[1rem] bg-gradient-to-r from-lilac-600 to-lilac-300 order-3 
+    s6:col-span-2 
+      s3:col-span-3"
     >
       <div className="bg-red-500... flex grow flex-col">
-        {/* <div className="bg-slate-500... text-5xl font-bold overflow-hidden">
-          <div className="overflow-hidden ">
-            <motion.div
-              initial={{ y: "100%" }}
-              whileInView={{ y: "0%" }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className=""
-            >
-              React
-            </motion.div>
-          </div>
-
-          <div className="overflow-hidden">
-            <motion.div
-              initial={{ y: "100%" }}
-              whileInView={{ y: "0%" }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className=""
-            >
-              Developer
-            </motion.div>
-          </div>
-        </div> */}
+       
 
         <motion.div
           initial={{ rotate: -45 }}

@@ -4,28 +4,40 @@ import Tree from "@/icons/tree.svg";
 export default function Technologies() {
   return (
     <>
-      <div
-        className="h-fit... s2:col-span-1 s2:row-span-1 
-        s4:col-span-2 s4:row-span-2 
-      
-      s2:m-0 order-2
-      
-      row-span-1 my-4 
+      <motion.section
+       initial={{ x: "10%", opacity: 0 }}
+       whileInView={{ x: "0%", opacity: 1 }}
+       viewport={{ once: true }}
+       transition={{ delay: 0.5, duration: 0.4 }}
+        className=" 
+        order-2
+        my-4 
+        row-span-1 
+        rounded-[1rem] bg-green bg-blue-200...
+
+        s2:col-span-1 s2:row-span-1 
+        s2:m-0 
+         
+      s3:col-span-4
+
+        s4:row-span-2 
+      s6:row-span-1
+   
+
+
       overflow-hidden
       
-      rounded-[1rem] bg-green
-      s4:w-fit...
-      s4:w-[30rem]...
+ 
       "
       >
         <motion.div
-          initial={{ x: "0%", opacity: 1 }}
+          initial={{ x: "10%", opacity: 1 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.4 }}
+          transition={{ delay: 0.6, duration: 0.4 }}
           className="bg-yellow-800... flex h-full w-full items-center justify-center"
         >
-          <div className="h-fit...  s3:h-[40rem]... s4:h-fit h-[30rem] w-fit bg-green">
+          <div className=" s4:h-fit h-[30rem] w-fit bg-green">
             <div className="relative h-full overflow-hidden">
               <motion.div
                 initial={{ y: "5%", opacity: 0 }}
@@ -155,7 +167,7 @@ export default function Technologies() {
             {/* </div> */}
           </div>
         </motion.div>
-      </div>
+      </motion.section>
     </>
   );
 }

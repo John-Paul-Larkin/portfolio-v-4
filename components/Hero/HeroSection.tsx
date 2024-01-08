@@ -5,36 +5,30 @@ import PhotoSection from "./PhotoSection";
 import ContactSection from "./ContactSection";
 import SvgSection from "./SvgSection";
 import AboutSection from "./AboutSection";
+import CoduSection from "../CoduSection";
 
 export default function HeroSection() {
   return (
     <section
       className="
-      s2:grid-cols-[1fr,1fr] s2:grid-rows-[repeat(5)] 
+       bg-yellow 
 
-      s2:gap-[1rem] 
+      mx-auto 
 
-      s4:grid-cols-[1fr,1fr,auto,auto] 
-    s6:grid-cols-[1fr,1fr,1fr,1fr]
-
-    s4:grid-rows-threeBox 
+      grid 
+      min-w-[280px] max-w-container-width
+      rounded-[1rem]
+      gap-[1rem]
     
-    s5:gap-[2rem]
-    
-    mx-auto
-    
-    bg-yellow
-    
-
-
-
-
-    grid
-    max-w-container-width
- 
-    rounded-[1rem] 
     p-[1rem]
     
+    s2:grid-cols-[1fr,1fr]
+    
+    
+    s3:grid-cols-[repeat(8,1fr)]
+
+    
+    s5:gap-[2rem] 
     "
     >
       <HeroBannerName />
@@ -48,6 +42,8 @@ export default function HeroSection() {
       {/* <SvgSection /> */}
 
       <AboutSection />
+
+      <CoduSection />
     </section>
   );
 }
