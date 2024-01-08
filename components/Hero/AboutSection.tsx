@@ -2,9 +2,16 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import 'swiper/css/navigation';
-import 'swiper/css/scrollbar';
-import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+import ClickArrow from "@/icons/click-arrow.svg";
 
 export default function AboutSection() {
   return (
@@ -13,57 +20,67 @@ export default function AboutSection() {
       whileInView={{ x: "0%", opacity: 1 }}
       viewport={{ once: true }}
       transition={{ delay: 0.6, duration: 0.4 }}
-      className="order-1 s2:m-0 s3:col-span-4 s4:row-span-2 s5:row-span-1 pb-4 bg-red-400 rounded-[2rem] "
+      className="order-1 rounded-[2rem] bg-red-400 pb-4 text-5xl font-extrabold s2:m-0 s3:col-span-4 s4:row-span-2 s5:row-span-1 "
     >
-      <Swiper 
-      spaceBetween={16}
-      slidesPerView={1}
-      loop={true}
-      modules={[Navigation, Scrollbar, Autoplay]}
-      scrollbar={{ draggable: true }}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-
-      // navigation
-      className="my-4... pb-4...     w-full h-full">
-        <div className="max-w-md flex items-center justify-center h-full bg-blue-400">
-
-
+      <Swiper
+        spaceBetween={16}
+        slidesPerView={1}
+        loop={true}
+        modules={[Navigation, Scrollbar, Autoplay]}
+        scrollbar={{ draggable: true }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+        }}
+        // navigation
+        className="h-full max-w-[80%]"
+      >
         <SwiperSlide>
-          {" "}
-          <p>I love to code.</p>
+          <div className="flex h-full items-center justify-center">
+            <p>Me?</p>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <p>
-            I have spent the previous eighteen months building projects in the
-            full-stack javascript ecosystem, but mostly focusing on React.
-          </p>
+          <div className="flex h-full items-center justify-center">
+            <p>I love to code.</p>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <p>
-            Im currently attending SETU to undertake a higher Diploma in
-            computer science
-          </p>
+          {" "}
+          <div className="flex h-full items-center justify-center overflow-hidden">
+            <p className="relative">
+              I build full-stack javascript{" "}
+              <span className="text-slate-50">
+                projects.
+                </span>
+                <motion.div
+                  initial={{ scale: 1, rotate:'260deg' }}
+                  whileInView={{ scale: 0.9, rotate:'260deg' }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 1,
+                    ease: "circInOut",
+                    repeatType: "reverse",
+                  }}
+                  className="bg-white... absolute h-[10rem] w-[10rem]  top-[-2rem] right-[-2rem]"
+                >
+                  <ClickArrow />
+                </motion.div>
+              <p className="mt-[.8em] text-[.8em]">(with a focus on React)</p>
+            </p>
+          </div>
         </SwiperSlide>
-        </div>
+        <SwiperSlide>
+          <div className="flex h-full items-center justify-center">
+            <p>
+              Im currently attending SETU to undertake a
+              <span className="text-slate-50"> higher Diploma </span>
+              in computer science
+            </p>
+          </div>
+        </SwiperSlide>
       </Swiper>
-      
     </motion.section>
   );
 }
-
-{/* <Swiper
-  spaceBetween={50}
-  slidesPerView={3}
-  onSlideChange={() => console.log("slide change")}
-  onSwiper={(swiper) => console.log(swiper)}
->
-  <SwiperSlide>Slide 1</SwiperSlide>
-  <SwiperSlide>Slide 2</SwiperSlide>
-  <SwiperSlide>Slide 3</SwiperSlide>
-  <SwiperSlide>Slide 4</SwiperSlide>
-  ...
-</Swiper>; */}
