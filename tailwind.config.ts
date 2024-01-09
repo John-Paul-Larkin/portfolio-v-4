@@ -68,7 +68,7 @@ const config: Config = {
       },
       screens: {
         s1: "280px",
-        s2: "440px",
+        s2: "450px",
         s3: "600px",
         s4: "700px",
         s5: "800px",
