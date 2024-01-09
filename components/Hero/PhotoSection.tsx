@@ -11,7 +11,7 @@ export default function PhotoSection() {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.4 }}
-        className="border-2 s6:col-span-6 relative order-3  h-full w-full s3:col-span-6  overflow-hidden rounded-[1rem] s3:row-span-1 s5:col-span-3"
+        className="hidden s2:block s2:border-2 s6:col-span-6 relative order-3  h-full w-full s3:col-span-5  overflow-hidden rounded-[1rem] s3:row-span-1 s5:col-span-3"
       >
         <Image
           src="/wrangler.png"

@@ -51,12 +51,15 @@ export default function CoduSection() {
                 className="s6:h-[20rem] absolute bottom-[-7rem] aspect-square h-[18rem]"
                 initial={{ rotate: 0 }}
                 animate={{ rotate: 90 }}
+                viewport={{ once: true, margin:"0px 0px -200px 0px" }}
+
                 transition={{ duration: 6, repeat: 0 }}
               >
                 <Image
                   src="/moon.png"
                   fill={true}
                   alt="full moon"
+
                   style={{ objectFit: "cover" }}
                 />
               </motion.div>

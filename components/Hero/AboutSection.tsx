@@ -20,10 +20,10 @@ export default function AboutSection() {
       whileInView={{ x: "0%", opacity: 1 }}
       viewport={{ once: true }}
       transition={{ delay: 0.6, duration: 0.4 }}
-      className="order-1 rounded-[2rem] bg-red-400 pb-4 text-5xl font-extrabold s2:m-0 s3:col-span-4 s4:row-span-2 s5:row-span-1 "
+      className="order-1 min-h-[20rem] w-full min-w-0 rounded-[2rem] bg-red-400 pb-2 text-2xl font-extrabold s2:m-0 s3:col-span-4 s3:text-3xl s4:row-span-2  s4:text-[34px] s5:row-span-1 s6:text-5xl"
     >
       <Swiper
-        spaceBetween={16}
+        spaceBetween={32}
         slidesPerView={1}
         loop={true}
         modules={[Navigation, Scrollbar, Autoplay]}
@@ -33,11 +33,11 @@ export default function AboutSection() {
           disableOnInteraction: true,
         }}
         // navigation
-        className="h-full max-w-[80%]"
+        className="max-w-[80%]... bg-blue-700... h-full w-full"
       >
         <SwiperSlide>
           <div className="flex h-full items-center justify-center">
-            <p>Me?</p>
+            <p>Me???</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -46,41 +46,67 @@ export default function AboutSection() {
             <p>I love to code.</p>
           </div>
         </SwiperSlide>
+
         <SwiperSlide>
-          {" "}
-          <div className="flex h-full items-center justify-center overflow-hidden">
-            <p className="relative">
-              I build full-stack javascript{" "}
-              <span className="text-slate-50">
-                projects.
+          <div className="bg-yellow-400... flex h-full w-full items-center justify-center overflow-hidden ">
+            <div className="bg-red-500... w-[90%]">
+              <p className="relative">
+                I build full-stack javascript{" "}
+                <span className="text-slate-50">projects.</span>
+                <br />
+                <span className="mt-[.8em] text-[.8em]">
+                  (with a focus on React)
                 </span>
-                <motion.div
-                  initial={{ scale: 1, rotate:'260deg' }}
-                  whileInView={{ scale: 0.9, rotate:'260deg' }}
-                  transition={{
-                    repeat: Infinity,
-                    duration: 1,
-                    ease: "circInOut",
-                    repeatType: "reverse",
-                  }}
-                  className="bg-white... absolute h-[10rem] w-[10rem]  top-[-2rem] right-[-2rem]"
-                >
-                  <ClickArrow />
-                </motion.div>
-              <p className="mt-[.8em] text-[.8em]">(with a focus on React)</p>
-            </p>
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="flex h-full w-full items-center justify-center">
+            <div className="bg-slate-500.. w-[90%]">
+              <p>
+                Im currently attending SETU undertaking a
+                <br/>
+                <span className="text-slate-50 whitespace-nowrap"> higher Diploma </span>
+                <br/>
+                in computer science.
+              </p>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex h-full items-center justify-center">
-            <p>
-              Im currently attending SETU to undertake a
-              <span className="text-slate-50"> higher Diploma </span>
-              in computer science
-            </p>
+          <div className="bg-red-500... w-[90%]">
+              <p>Please send me a</p>
+              <span className=""> message. </span>
+              <br/>
+              <a
+                href="mailto: johnplarkin@gmail.com"
+                className="mt-[8em] text-[.7em] text-slate-50..."
+              >
+                johnplarkin@gmail.com
+              </a>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
     </motion.section>
   );
+}
+
+{
+  /* <motion.div
+    initial={{ scale: 1, rotate:'260deg' }}
+    whileInView={{ scale: 0.9, rotate:'260deg' }}
+    transition={{
+      repeat: Infinity,
+      duration: 1,
+      ease: "circInOut",
+      repeatType: "reverse",
+    }}
+    className="bg-white... absolute h-[10rem] w-[10rem]  top-[-2rem] right-[-2rem]"
+  >
+    <ClickArrow />
+  </motion.div> */
 }

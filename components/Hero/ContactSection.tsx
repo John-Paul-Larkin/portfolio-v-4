@@ -28,15 +28,15 @@ export default function ContactSection() {
           className="bg-blue-700.. flex grow items-center justify-around"
         >
           <div className="">
-            <Email className="h-14" />
-            <Arrows className=" h-14   w-12 p-3" />
-            <Phone className="h-14" />
+            <Email className="h-14 s5:h-10 s6:h-14" />
+            <Arrows className=" h-14 s5:h-10 s6:h-14   w-12 p-3" />
+            <Phone className="h-14 s5:h-10 s6:h-14" />
           </div>
 
           <div>
-            <LinkedIn className="h-14 " />
-            <Arrows className="h-14 w-12   rotate-180 p-3" />
-            <Github className="h-14 " />
+            <LinkedIn className="h-14 s5:h-10 s6:h-14 " />
+            <Arrows className="h-14 s5:h-10 s6:h-14 w-12 rotate-180 p-3" />
+            <Github className="h-14 s5:h-10 s6:h-14 " />
           </div>
         </motion.div>
       </div>
@@ -44,7 +44,7 @@ export default function ContactSection() {
       <div
       
         style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
-        className="h-full...  rounded-tr-none... flex items-center justify-center rounded-[1rem] bg-navy-100 p-4 text-4xl font-extrabold text-white overflow-hidden"
+        className="h-full...  rounded-tr-none... flex items-center justify-center rounded-[1rem] bg-navy-100 p-4 text-4xl s5:text-2xl s6:text-4xl font-extrabold text-white overflow-hidden"
       >
         <motion.h3
          initial={{ y: "100%" }}
