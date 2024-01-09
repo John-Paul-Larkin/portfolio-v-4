@@ -4,11 +4,9 @@ import Technologies from "./Technologies";
 import PhotoSection from "./PhotoSection";
 import ContactSection from "./ContactSection";
 import AboutSection from "./AboutSection";
-import CoduSection from "../CoduSection";
 
 export default function HeroSection() {
   return (
-
     <section
       className=" grid    
       gap-[1rem] rounded-[2rem] bg-overall-bg p-[1rem]
@@ -24,9 +22,6 @@ export default function HeroSection() {
 
       <AboutSection />
 
-      {/* <CoduSection /> */}
     </section>
-
-
   );
 }
