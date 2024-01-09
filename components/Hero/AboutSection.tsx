@@ -25,7 +25,7 @@ export default function AboutSection() {
       <Swiper
         spaceBetween={32}
         slidesPerView={1}
-        loop={true}
+        loop={false}
         modules={[Navigation, Scrollbar, Autoplay]}
         scrollbar={{ draggable: true }}
         autoplay={{

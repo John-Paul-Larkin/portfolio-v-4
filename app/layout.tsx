@@ -18,9 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-box-bg mt-[2rem]">
       <body className={poppins.className}>
-        <div className="pt-[2rem]... bg-overall-bg">{children}</div>
+        <div className="pt-[2rem]...">{children}</div>
       </body>
     </html>
   );
