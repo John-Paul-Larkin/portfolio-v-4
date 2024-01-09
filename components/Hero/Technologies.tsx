@@ -49,16 +49,17 @@ export default function Technologies() {
               >
                 <Tree className="z-10 h-full w-full" />
               </motion.div>
-
-              <motion.div
-                initial={{ y: "0%", opacity: 1 }}
-                whileInView={{ y: "100%", opacity: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 2, duration: 5 }}
-                className="absolute top-[42%] z-40 h-[60%] w-full bg-green"
-              ></motion.div>
             </div>
           </div>
+
+          <motion.div
+            initial={{ y: "0%", opacity: 1 }}
+            whileInView={{ y: "100%", opacity: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 2, duration: 5 }}
+            className="absolute top-[42%] z-40 h-[60%] w-full bg-green"
+          ></motion.div>
+
           <TechIcons />
         </motion.div>
       </motion.section>
@@ -68,90 +69,104 @@ export default function Technologies() {
 
 function TechIcons() {
   return (
-    <div className="bg-red-500... absolute top-[50%] z-30 grid w-full max-w-[35rem] grid-cols-[repeat(15,1fr)] grid-rows-[repeat(5,auto)] gap-[.5rem] p-4 text-[1rem] text-white">
+    <motion.div
+      initial={{ y: "0%", opacity: 0 }}
+      whileInView={{ y: "0%", opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 4, duration: 2 }}
+      className="bg-red-500... absolute top-[50%] z-30 grid w-full max-w-[35rem] grid-cols-[repeat(15,1fr)] grid-rows-[repeat(5,auto)] gap-[.5rem] p-4 text-[1rem] text-white s6:text-[1.2rem]  s7:text-[1.3rem] s8:text-[1.4rem]"
+    >
       <div
         className="bg-orange-700... col-span-full
-         flex items-center justify-center text-[1em]"
+         mb-[1em] flex items-center justify-center text-[1em]"
       >
         <div className="flex w-fit rounded-md bg-blue-500 shadow-md shadow-slate-600">
-          <p className=" p-[.3em]  ">JavaScript</p>
-          <div className="relative right-[-.5em] top-[-.5em] h-[2em] w-[2em] shadow-md shadow-slate-600">
+          <p className=" p-[.2em]  ">JavaScript</p>
+          <div className="relative right-[-.5em] top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] shadow-md shadow-slate-600">
             <JavaScriptIcon />
           </div>
         </div>
       </div>
 
-      <div className="col-span-5 flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <RowTwo />
+      <RowThree />
+      <RowFour />
+    </motion.div>
+  );
+}
+
+function RowTwo() {
+  return (
+    <>
+      <div className="col-span-5 mb-[1em] flex items-center justify-center text-[.55em] ">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600 shadow-md shadow-slate-600">
           <p className=" p-[.2em] ">TypeScript</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <TypeScriptIcon />
           </div>
         </div>
       </div>
 
-      <div className="col-span-5 flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-5 mb-[1em] flex items-center justify-center text-[.55em]">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">React</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <ReactIcon />
           </div>
         </div>
       </div>
 
-      <div className="col-span-5 flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-5 mb-[1em] flex items-center justify-center text-[.55em]">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">Node</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <NodeIcon />
           </div>
         </div>
       </div>
-      <RowThree />
-      <RowFour />
-    </div>
+    </>
   );
 }
 
 function RowThree() {
   return (
     <>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">Next.js</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <NextIcon />
           </div>
         </div>
       </div>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">Html</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <HtmlIcon />
           </div>
         </div>
       </div>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">CSS</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <CssIcon />
           </div>
         </div>
       </div>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">Redux</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <ReduxIcon />
           </div>
         </div>
       </div>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">Firebase</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <FirebaseIcon />
           </div>
         </div>
@@ -163,42 +178,45 @@ function RowThree() {
 function RowFour() {
   return (
     <>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">Tailwind</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <TailwindIcon />
           </div>
         </div>
       </div>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">Framer</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <FramerIcon />
           </div>
         </div>
       </div>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
-          <p className=" p-[.2em] whitespace-nowrap">My SQL</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
+          <p className=" whitespace-nowrap p-[.2em]">My SQL</p>
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <MysqlIcon />
           </div>
         </div>
       </div>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">Prisma</p>
-          <div className="relative top-[-.5em] h-[1.6em] w-[1.6em] ">
-            <PrismaIcon />
+
+          <div className="relative top-[-.5em] h-[1.9em] w-[1.9em] rounded-md bg-white">
+            <div className="absolute left-[.2em] top-0 h-[1.5em] w-[1.5em]">
+              <PrismaIcon />
+            </div>
           </div>
         </div>
       </div>
-      <div className="col-span-3 s2:col-span-5 s3:col-span-3  flex items-center justify-center text-[.55em]">
-        <div className=" flex w-[8em] justify-around rounded-md bg-blue-900">
+      <div className="col-span-3 flex items-center  justify-center text-[.55em] s2:col-span-5 s3:col-span-3">
+        <div className=" flex w-[8em] justify-around rounded-md bg-blue-600">
           <p className=" p-[.2em]">Zod</p>
-          <div className="relative top-[-.5em] h-[2em] w-[2em] ">
+          <div className="relative top-[-.5em] h-[2em] w-[2em] rounded-md bg-white p-[.2em] ">
             <ZodIcon />
           </div>
         </div>

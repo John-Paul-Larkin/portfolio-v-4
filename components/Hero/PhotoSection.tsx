@@ -19,7 +19,7 @@ export default function PhotoSection() {
           // width={3648}
           fill={true}
           alt="JP Larkin stading in front of computer"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", objectPosition: "0px -100px" }}
           priority={true}
         />
       </motion.section>

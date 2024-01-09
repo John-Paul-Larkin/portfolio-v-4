@@ -37,7 +37,7 @@ export default function AboutSection() {
       >
         <SwiperSlide>
           <div className="flex h-full items-center justify-center">
-            <p>Me???</p>
+            <p>Me?</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -67,9 +67,12 @@ export default function AboutSection() {
             <div className="bg-slate-500.. w-[90%]">
               <p>
                 Im currently attending SETU undertaking a
-                <br/>
-                <span className="text-slate-50 whitespace-nowrap"> higher Diploma </span>
-                <br/>
+                <br />
+                <span className="whitespace-nowrap text-slate-50">
+                  {" "}
+                  higher Diploma{" "}
+                </span>
+                <br />
                 in computer science.
               </p>
             </div>
@@ -77,16 +80,18 @@ export default function AboutSection() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex h-full items-center justify-center">
-          <div className="bg-red-500... w-[90%]">
-              <p>Please send me a</p>
-              <span className=""> message. </span>
-              <br/>
+            <div className="bg-red-500... w-[90%]">
+              <p className="mb-[1em]">Go ahead.</p>
+
+              <p className="mb-[1em]">Make my day!</p>
               <a
                 href="mailto: johnplarkin@gmail.com"
-                className="mt-[8em] text-[.7em] text-slate-50..."
+                className=" text-slate-50... text-[.7em]"
               >
                 johnplarkin@gmail.com
               </a>
+
+              {/* <p className="mt-[1em]">It will make my day!</p> */}
             </div>
           </div>
         </SwiperSlide>
