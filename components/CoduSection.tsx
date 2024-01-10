@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import moon from '@/public/moon.png'
 
 export default function CoduSection() {
   return (
@@ -76,8 +77,8 @@ export default function CoduSection() {
                   transition={{ duration: 30, repeat: Infinity }}
                 >
                   <Image
-                    src="/moon.png"
-                    fill={true}
+                    src={moon}
+                    // fill={true}
                     alt="full moon"
                     style={{ objectFit: "cover" }}
                   />
