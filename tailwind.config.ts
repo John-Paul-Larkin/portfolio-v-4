@@ -35,6 +35,7 @@ const config: Config = {
           "linear-gradient(to top, hsla(336, 72%, 52%, 1), hsla(26, 95%, 61%, 1))",
         coduColor: "#f17f06",
         cream: "hsl(0, 0%, 85%)",
+        bgCream:"hsl(22, 15%, 90%)",
         // "bg-color": "hsl(227, 28%, 43%)",
         treeBG: "#f5efea",
         green: "#40c2a6",

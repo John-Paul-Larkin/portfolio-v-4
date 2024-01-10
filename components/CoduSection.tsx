@@ -32,7 +32,7 @@ export default function CoduSection() {
             <div className="h-[24rem] text-white">
               <h3 className="m-[1rem] text-3xl font-extrabold">Open Source</h3>
               <p className="m-[1rem]">
-                Codú is Ireland&quot;s largest coding community. The perfect
+                Codú is Ireland&apos;s largest coding community. The perfect
                 place to learn, contribute and network with like minded
                 individuals.
               </p>
