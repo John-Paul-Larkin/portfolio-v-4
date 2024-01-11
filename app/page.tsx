@@ -6,7 +6,7 @@ import ProjectsSection from "@/components/projects/ProjectsSection";
 
 export default function Home() {
   return (
-    <main className=" min-h-screen bg-box-bg  mx-auto min-w-[280px] max-w-container-width">
+    <main className=" min-h-screen bg-box-bg...  mx-auto min-w-[280px] max-w-container-width">
       <HeroSection />
 
 

@@ -82,7 +82,12 @@ export default function CoduSection() {
         </div>
       </motion.div>
 
-      <div className="s80:col-span-3 col-span-full min-h-[20rem] rounded-[1rem] bg-white"></div>
+      <motion.div
+       initial={{ x: "10px", y: "10px", opacity: 0 }}
+       whileInView={{ x: "0%", y: 0, opacity: 1 }}
+       viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+       transition={{ delay: 0.2, duration: 0.4 }}
+      className="s80:col-span-3 col-span-full min-h-[20rem] rounded-[1rem] bg-white"></motion.div>
     </div>
   );
 }
