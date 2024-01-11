@@ -4,7 +4,7 @@ import annoyedCustomer from "@/public/annoyedCustomer.jpg";
 
 export default function KitchenImageSection() {
   return (
-    <div className="relative col-span-full  overflow-hidden rounded-[1rem] bg-navy-300 s6:col-span-5 s3:order-5 s6:order-2 s6:row-span-2 ">
+    <div className="relative col-span-full  overflow-hidden rounded-[1rem] bg-navy-300 s6:col-span-5 s3:order-5 s6:order-2 s6:row-span-3 ">
     <div className=" flex h-full flex-col items-center justify-start overflow-hidden">
       <Image
         src={annoyedCustomer}
@@ -14,7 +14,7 @@ export default function KitchenImageSection() {
 
         className=" s5:w-[90%] "
       />
-      <div className="bg-yellow-800... p-[1rem] text-white">
+      <div className="bg-yellow-800... p-[1rem] text-white s2:text-[1.3rem] s3:text-[1.6rem] s5:text-[1.8rem]">
         <p>
           In a busy restaurant kitchen, speed and efficiency are the key
           to success.
@@ -56,7 +56,7 @@ export default function KitchenImageSection() {
     s6:right-[4rem] s6:top-[4rem] 
     s6:p-[2rem] s6:text-[2rem] 
     
-       
+       drop-shadow-lg
     "
     >
       What&apos;s taking

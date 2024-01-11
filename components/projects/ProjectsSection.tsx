@@ -14,7 +14,7 @@ export default function ProjectsSection() {
         s5:mt-[2rem]
         s5:p-[2rem]"
       >
-        <h2 className="w-fit rounded-[1rem] bg-navy-300 p-4 text-4xl font-extrabold text-white">
+        <h2 className="w-fit... rounded-[1rem] bg-navy-300 p-4 text-4xl font-extrabold text-white">
           Projects
         </h2>
       </div>
@@ -28,8 +28,10 @@ export default function ProjectsSection() {
 
         grid grid-cols-[repeat(8,1fr)]
         grid-rows-[auto,auto,auto,repeat(2,1fr)]
-s3:grid-rows-[auto,auto,repeat(2,1fr)]
-s6:grid-rows-[auto,auto,auto,auto,auto]
+        s3:grid-rows-[auto,auto,repeat(2,1fr)]
+        s4:grid-rows-[repeat(5,auto)]
+
+        s6:grid-rows-[auto,auto,auto,auto,auto]
 
         gap-[1rem] 
         rounded-[2rem]

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-// import "swiper/css/navigation";
+import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import dynamic from "next/dynamic";
 import kitchenDisplay from "@/public/KitchenDisplay2.webp";
@@ -20,18 +20,18 @@ const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 export default function KitchenCarousel() {
   return (
-    <div className="col-span-full overflow-hidden  rounded-[1rem] s6:col-span-4... s3:order-6">
+    <div className="s6:col-span-4... col-span-full  overflow-hidden rounded-[1rem] s3:order-6">
       <Swiper
         spaceBetween={32}
         slidesPerView={1}
-        loop={false}
-        modules={[Scrollbar, Autoplay]}
+        loop={true}
+        modules={[Scrollbar, Autoplay, Navigation]}
         scrollbar={{ draggable: true }}
         autoplay={{
           delay: 4000,
           disableOnInteraction: true,
         }}
-        // navigation
+        navigation
         className="mt-[1rem]... h-full"
       >
         <SwiperSlide>
@@ -50,40 +50,40 @@ export default function KitchenCarousel() {
 
 function SlideOne() {
   return (
-    <div className="w-full... bg-red-400... flex h-full bg-yellow-300 ">
-      <div className="h-full... w-full... grow... bg-white">
+    <div className="flex h-full bg-yellow-300 ">
+      <div className=" grow...  flex h-full flex-col justify-evenly p-4 s2:text-[1.3rem] s3:p-8 s3:text-[1.6rem] s5:text-[1.8rem]">
         <p>Wait staff enter orders from the restaurant floor.</p>
         <p>Each item is completely customisable.</p>
       </div>
 
-      {/* <div className="w-[60%]... py-[1rem] h-full..."> */}
-      <Image
-        src={posMove}
-        alt="animated example of the point of sale application"
-        // style={{ objectFit: "cover" }}
+      <div className="bg-blue-400... mb-4 mr-4 flex h-full min-w-[50%] items-center justify-center">
+        <Image
+          src={posMove}
+          alt="animated example of the point of sale application"
+          // style={{ objectFit: "cover" }}
 
-        className=" aspect-auto... h-full max-h-[15rem] object-contain p-[1rem]"
-      />
-      {/* </div> */}
+          className="p-[1rem]... w-fit... h-full  object-contain"
+        />
+      </div>
     </div>
   );
 }
 
 function SlideTwo() {
   return (
-    <div className="flex h-full flex-col">
-      <div className="grow bg-pink-500">
+    <div className="bg-pink-500... flex h-full flex-col bg-yellow-300">
+      <div className="flex grow flex-col justify-evenly p-4  s2:text-[1.3rem] s3:p-8 s3:text-[1.6rem] s5:text-[1.8rem]">
         <p>Those orders go straight to the kitchen</p>
         <p>The chef then has the order information on a kitchen display.</p>
       </div>
 
-      <div>
+      <div className="bg-yellow-200... p-4">
         <Image
           src={kitchenDisplay}
           alt="animated example showing orders on the kitchen diplay app"
           // style={{ objectFit: "cover" }}
           // unoptimized
-          className="p-[4rem]... w-full object-contain"
+          className="p-[4rem]... w-full border-2  border-black object-contain"
         />
       </div>
     </div>
@@ -92,8 +92,8 @@ function SlideTwo() {
 
 function SlideThree() {
   return (
-    <div className="flex h-full w-full  flex-col bg-blue-200">
-      <div className="grow ">
+    <div className="bg-blue-200... flex h-full  w-full flex-col bg-yellow-300">
+      <div className="grow s2:text-[1.3rem] s3:p-8 s3:text-[1.6rem] s5:text-[1.8rem]">
         Watch this intro showcasing the applications features.(1:17)
       </div>
       <div className="w-[50%]... aspect-video p-[1rem] ">
@@ -106,6 +106,7 @@ function SlideThree() {
           controls={true}
           // muted={false}
           playing={true}
+          className="border-2 border-black"
         />
       </div>
     </div>
