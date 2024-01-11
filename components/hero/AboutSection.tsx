@@ -81,9 +81,9 @@ export default function AboutSection() {
         <SwiperSlide>
           <div className="flex h-full items-center justify-center">
             <div className="bg-red-500... w-[90%]">
-              <p className="mb-[1em]">Go ahead.</p>
+              {/* <p className="mb-[1em]">Go ahead.</p> */}
 
-              <p className="mb-[1em]">Make my day!</p>
+              <p className="mb-[1em]">Want to make my day?</p>
               <a
                 href="mailto: johnplarkin@gmail.com"
                 className=" text-slate-50... text-[.7em]"

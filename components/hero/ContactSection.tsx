@@ -15,7 +15,9 @@ export default function ContactSection() {
       transition={{ delay: 0.5, duration: 0.4 }}
       className="s5:w-[15rem]... bg-lilac... s5:col-span-1  relative flex rounded-[1rem] bg-gradient-to-r from-lilac-600 to-lilac-300 order-3 
     s6:col-span-2 
-      s3:col-span-3"
+      s3:col-span-3
+      overflow-hidden
+      "
     >
       <div className="bg-red-500... flex grow flex-col">
        

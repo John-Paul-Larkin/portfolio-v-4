@@ -73,7 +73,7 @@ function TechIcons() {
       initial={{ y: "0%", opacity: 0 }}
       whileInView={{ y: "0%", opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ delay: 4, duration: 2 }}
+      transition={{ delay: 2, duration: 2 }}
       className="bg-red-500... absolute top-[50%] z-30 grid w-full max-w-[35rem] grid-cols-[repeat(15,1fr)] grid-rows-[repeat(5,auto)] gap-[.5rem] p-4 text-[1rem] text-white s6:text-[1.2rem]  s7:text-[1.3rem] s8:text-[1.4rem]"
     >
       <div
