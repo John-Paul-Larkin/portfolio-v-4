@@ -1,74 +1,67 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 import annoyedCustomer from "@/public/annoyedCustomer.jpg";
 
 export default function KitchenImageSection() {
   return (
-    <div className="relative col-span-full  overflow-hidden rounded-[1rem] bg-navy-300 s6:col-span-5 s3:order-5 s6:order-2 s6:row-span-3 ">
-    <div className=" flex h-full flex-col items-center justify-start overflow-hidden">
-      <Image
-        src={annoyedCustomer}
-        priority={false}
-        alt="Waiter standing over annoyed cutomer"
-        // style={{ objectFit: "cover", }}
+    <div className="s60:order-5 s100:order-2  s100:col-span-5 s100:row-span-3 relative col-span-full overflow-hidden rounded-[1rem] bg-navy-300 ">
+      <div className=" flex h-full flex-col items-center justify-start overflow-hidden">
+        <Image
+          src={annoyedCustomer}
+          priority={false}
+          alt="Waiter standing over annoyed cutomer"
+          // style={{ objectFit: "cover", }}
 
-        className=" s5:w-[90%] "
-      />
-      <div className="bg-yellow-800... p-[1rem] text-white s2:text-[1.3rem] s3:text-[1.6rem] s5:text-[1.8rem]">
-        <p>
-          In a busy restaurant kitchen, speed and efficiency are the key
-          to success.
-        </p>
-        <p className="mt-4">
-          These apps facilitate communication and clarity.
-        </p>
+          className=" s80:w-[90%] "
+        />
+        <div className="bg-yellow-800... s45:text-[1.3rem] s60:text-[1.6rem] s80:text-[1.8rem] p-[1rem] text-white">
+          <p>
+            In a busy restaurant kitchen, speed and efficiency are the key to
+            success.
+          </p>
+          <p className="mt-4">
+            These apps facilitate communication and clarity.
+          </p>
+        </div>
       </div>
-    </div>
-    <p
-      className="bg-bgCream absolute 
-    right-[.5rem] 
-    top-[.5rem] 
-    rounded-[1rem]
+      <p
+        className="s45:right-[1rem] s45:top-[1rem] 
+    s45:p-[.7rem] 
+    s45:text-[1.2rem] 
+    s60:right-[2rem]
         
-    border-2 
-    border-navy-600 
+    s60:top-[2rem] 
+    s60:p-[1.5rem] 
 
-    p-[.5rem] text-[1rem] 
-    font-semibold
+    s60:text-[1.3rem] s70:right-[3rem] 
+    s70:top-[3rem]
+    s70:p-[1.7rem] s70:text-[1.7rem] 
+
+    s70:leading-7 s80:right-[2rem] 
+    s80:top-[3.5rem] s80:p-[2rem]
+
+    s80:text-[2rem] s100:right-[4rem] 
+    s100:top-[4rem] s100:p-[2rem] 
+
+    s100:text-[2rem] absolute 
+    right-[.5rem] top-[.5rem] 
+    rounded-[1rem]
+    
+    
+
+
+    border-2 border-navy-600 
+    bg-bgCream p-[.5rem] 
+    
+    text-[1rem] font-semibold 
     leading-5 text-navy-600 
-
-    s2:right-[1rem] s2:top-[1rem] 
-    s2:p-[.7rem] s2:text-[1.2rem]
-
-    s3:right-[2rem] s3:top-[2rem] 
-    s3:p-[1.5rem] s3:text-[1.3rem] 
-
-    s4:right-[3rem] s4:top-[3rem] 
-    s4:p-[1.7rem] s4:text-[1.7rem] 
-    s4:leading-7
-    
-    
-
-
-    s5:right-[2rem] s5:top-[3.5rem] 
-    s5:p-[2rem] s5:text-[2rem] 
-    
-    s6:right-[4rem] s6:top-[4rem] 
-    s6:p-[2rem] s6:text-[2rem] 
     
        drop-shadow-lg
     "
-    >
-      What&apos;s taking
-      <br /> so long?
-    </p>
-  </div>
-
-
-
-
-
-
-
-  )
+      >
+        What&apos;s taking
+        <br /> so long?
+      </p>
+    </div>
+  );
 }

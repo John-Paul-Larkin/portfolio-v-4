@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import wrangler from '@/public/wrangler.png'
+import wrangler from "@/public/wrangler.png";
 
 export default function PhotoSection() {
   return (
@@ -12,11 +12,10 @@ export default function PhotoSection() {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.4 }}
-        className="hidden s2:block s2:border-2 s6:col-span-6 relative order-3  h-full w-full s3:col-span-5 s7:h-[30rem] overflow-hidden rounded-[1rem] s3:row-span-1 s5:col-span-3"
+        className="s45:block s45:border-2 s60:col-span-5 s60:row-span-1 s80:col-span-3 s100:col-span-6  s120:h-[30rem] relative order-3 hidden h-full w-full overflow-hidden rounded-[1rem]"
       >
         <Image
           src={wrangler}
-        
           // fill={true}
           alt="JP Larkin stading in front of computer"
           style={{ objectFit: "cover", objectPosition: "0px 0px" }}

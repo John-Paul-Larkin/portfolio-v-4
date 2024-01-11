@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function SvgSection() {
   return (
-    <div className=" h-[10rem]... relative overflow-hidden rounded-[1rem] s3:col-span-2">
+    <div className=" h-[10rem]... s60:col-span-2 relative overflow-hidden rounded-[1rem]">
       <motion.div
-        initial={{ x: "10%", opacity: 0 }}
+        initial={{ x: "10px", opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ delay: 0.5, duration: 0.4 }}
+        transition={{ delay: 0.6, duration: 0.4 }}
         className=" pt-[100%]... bg-navy relative h-full w-full"
       >
         <Image

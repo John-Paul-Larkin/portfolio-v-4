@@ -20,7 +20,7 @@ const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 export default function KitchenCarousel() {
   return (
-    <div className="s6:col-span-4... col-span-full  overflow-hidden rounded-[1rem] s3:order-6">
+    <div className="s100:col-span-4... s60:order-6  col-span-full overflow-hidden rounded-[1rem]">
       <Swiper
         spaceBetween={32}
         slidesPerView={1}
@@ -51,7 +51,7 @@ export default function KitchenCarousel() {
 function SlideOne() {
   return (
     <div className="flex h-full bg-yellow-300 ">
-      <div className=" grow...  flex h-full flex-col justify-evenly p-4 s2:text-[1.3rem] s3:p-8 s3:text-[1.6rem] s5:text-[1.8rem]">
+      <div className=" grow...  s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem] flex h-full flex-col justify-evenly p-4">
         <p>Wait staff enter orders from the restaurant floor.</p>
         <p>Each item is completely customisable.</p>
       </div>
@@ -72,7 +72,7 @@ function SlideOne() {
 function SlideTwo() {
   return (
     <div className="bg-pink-500... flex h-full flex-col bg-yellow-300">
-      <div className="flex grow flex-col justify-evenly p-4  s2:text-[1.3rem] s3:p-8 s3:text-[1.6rem] s5:text-[1.8rem]">
+      <div className="s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem] flex  grow flex-col justify-evenly p-4">
         <p>Those orders go straight to the kitchen</p>
         <p>The chef then has the order information on a kitchen display.</p>
       </div>
@@ -93,7 +93,7 @@ function SlideTwo() {
 function SlideThree() {
   return (
     <div className="bg-blue-200... flex h-full  w-full flex-col bg-yellow-300">
-      <div className="grow s2:text-[1.3rem] s3:p-8 s3:text-[1.6rem] s5:text-[1.8rem]">
+      <div className="s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem] grow">
         Watch this intro showcasing the applications features.(1:17)
       </div>
       <div className="w-[50%]... aspect-video p-[1rem] ">
