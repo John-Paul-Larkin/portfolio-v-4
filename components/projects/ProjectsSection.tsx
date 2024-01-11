@@ -19,14 +19,18 @@ export default function ProjectsSection() {
         </h2>
       </div>
 
-      {/* /////////////////////////////// */}
+
+
 
       <section
         className=" 
           mb-[100rem] mt-[1rem]
 
         grid grid-cols-[repeat(8,1fr)]
-        grid-rows-[auto,repeat(2,1fr)]
+        grid-rows-[auto,auto,auto,repeat(2,1fr)]
+s3:grid-rows-[auto,auto,repeat(2,1fr)]
+s6:grid-rows-[auto,auto,auto,auto,auto]
+
         gap-[1rem] 
         rounded-[2rem]
         bg-overall-bg

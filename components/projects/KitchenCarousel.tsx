@@ -20,7 +20,7 @@ const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 export default function KitchenCarousel() {
   return (
-    <div className="col-span-full overflow-hidden  rounded-[1rem] s6:col-span-4...">
+    <div className="col-span-full overflow-hidden  rounded-[1rem] s6:col-span-4... s3:order-6">
       <Swiper
         spaceBetween={32}
         slidesPerView={1}

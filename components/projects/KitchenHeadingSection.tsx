@@ -8,12 +8,12 @@ import Link from "next/link";
 
 export default function KitchenHeadingSection() {
   return (
-    <div className="col-span-full grid grid-cols-8 grid-rows-4... gap-[1rem]">
-      <div className="col-span-full  s3:col-span-6 s3:order-1 rounded-[1rem] bg-blue-400  p-4">
+    <>
+      <div className="col-span-full rounded-[1rem] bg-blue-400  p-4 s3:order-1 s3:col-span-6 s6:col-span-full">
         <h3 className="text-[1.1rem]  font-semibold">Kitchen management</h3>
       </div>
 
-      <div className="col-span-full s3:order-4 s3:col-span-6 row-span-4... rounded-[1rem] bg-waiterYellow  p-4">
+      <div className="col-span-full  row-span-4... rounded-[1rem] bg-waiterYellow  p-4 s3:order-4 s3:col-span-6 s6:order-3 s6:col-span-3 ">
         <p>This project consists of two apps.</p>
         <p>
           The first is a point of sale, for taking orders, and the second is a
@@ -22,7 +22,7 @@ export default function KitchenHeadingSection() {
         </p>
       </div>
 
-      <div className="col-span-3 s3:order-2 s3:col-span-2 row-span-1 flex items-center justify-center rounded-[1rem] bg-waiterYellow ">
+      <div className="col-span-3  row-span-1 flex items-center justify-center rounded-[1rem] bg-waiterYellow s3:order-2 s3:col-span-2 s6:order-4 s6:col-span-1">
         <Image
           src={waiter}
           alt="outline of a waiter holding a tray with a glass on it"
@@ -32,10 +32,10 @@ export default function KitchenHeadingSection() {
         />
       </div>
 
-      <div className="col-span-5 s3:order-3 s3:col-span-2 rounded-[1rem] bg-emerald-500 p-4 flex items-center justify-center">
+      <div className="col-span-5 rounded-[1rem] bg-emerald-500 p-4 flex items-center justify-center s3:order-3 s3:col-span-2 s6:order-5">
         <ProjectLinks />
       </div>
-    </div>
+    </>
   );
 }
 

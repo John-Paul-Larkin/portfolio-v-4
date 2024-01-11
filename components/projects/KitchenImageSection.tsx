@@ -4,7 +4,7 @@ import annoyedCustomer from "@/public/annoyedCustomer.jpg";
 
 export default function KitchenImageSection() {
   return (
-    <div className="relative col-span-full  overflow-hidden rounded-[1rem] bg-navy-300 s6:col-span-4">
+    <div className="relative col-span-full  overflow-hidden rounded-[1rem] bg-navy-300 s6:col-span-5 s3:order-5 s6:order-2 s6:row-span-2 ">
     <div className=" flex h-full flex-col items-center justify-start overflow-hidden">
       <Image
         src={annoyedCustomer}
