@@ -9,39 +9,42 @@ import Link from "next/link";
 export default function KitchenHeadingSection() {
   return (
     <>
-      <div className="bg-blue-400... s60:order-1 s60:col-span-6 s100:col-span-3  col-span-full flex items-center justify-center rounded-[1rem] bg-red-400 p-4">
-        <h3 className="s60:text-[1.4rem] s100:text-[1.6rem] text-[1.1rem] font-semibold">
-          Kitchen management
-        </h3>
-      </div>
-
       <div
-        className="row-span-4...  bg-waiterYellow... s45:text-[1.3rem] s60:order-4 s60:col-span-5  s60:text-[1.6rem] s70:col-span-6 s80:text-[1.8rem] s100:order-3 s100:col-span-3  col-span-full
-      
-      rounded-[1rem] bg-red-400 p-4
+        className="
+      col-span-full  rounded-[1rem] bg-red-400 p-4 s45:text-[1.3rem]
+
+      s60:order-1
+      s60:col-span-full
+      s60:text-[1.6rem]
+      s80:text-[1.8rem] s100:col-span-4 s100:row-span-3
       "
       >
-        <p>This project consists of two apps.</p>
-        <p>
-          A point of sale, for taking orders, and a Kitchen display system,
-          which is a digital visual representation of a traditional kitchen
-          pass.
+        <h3 className="text-[1.3em] font-semibold m-[1em]">
+          Restaurant management
+        </h3>
+
+        <div className=" float-right w-[7em]">
+          <Image
+            src={waiter}
+            alt="outline of a waiter holding a tray with a glass on it"
+            // style={{ objectFit: "cover" }}
+
+            className="rounded-[1rem]  bg-waiterYellow... object-contain "
+          />
+        </div>
+
+        <p className="mb-[1em] ml-[1em]">
+          In a busy restaurant, speed and efficiency are the key to success.
         </p>
+
+        <p className="mb-[1em] ml-[1em]">
+          These point of sale and kitchen diplay apps facilitate communication and clarity between the front of
+          house and the kitchen.
+        </p>
+    
       </div>
 
-      <div className="bg-red-400...  s60:order-2 s60:col-span-2 s100:order-4 s100:col-span-1 col-span-3 row-span-1 flex items-center  justify-center rounded-[1rem] bg-waiterYellow">
-        <Image
-          src={waiter}
-          alt="outline of a waiter holding a tray with a glass on it"
-          // style={{ objectFit: "cover" }}
-          // unoptimized
-          className="p-[4rem]... w-full... max-h-[6rem] object-contain"
-        />
-      </div>
 
-      <div className="bg-emerald-500... s60:order-3 s60:col-span-3 s70:col-span-2 s100:order-5 col-span-5 flex items-center justify-center rounded-[1rem] bg-green p-4">
-        <ProjectLinks />
-      </div>
     </>
   );
 }
@@ -79,10 +82,10 @@ function ProjectLinks() {
 
       <div className="flex justify-center">
         <Link
-          href="link to live version of kitchen display app"
+          href="https://kitchendisplay.netlify.app/"
           // passHref={true}
           target="_blank"
-          aria-label="https://kitchendisplay.netlify.app/"
+          aria-label="link to live version of kitchen display app"
         >
           <div className="flex w-[6em] justify-between">
             Kitchen

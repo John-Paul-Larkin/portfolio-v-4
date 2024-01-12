@@ -69,12 +69,16 @@ const config: Config = {
         technologyDesktop: "auto 1fr 1fr",
       },
       screens: {
+        s40: "400px",
         s45: "450px",
+        s50: "500px",
+
         s60: "600px",
         s70: "700px",
         s80: "800px",
         s100: "1000px",
         s120: "1200px",
+        s140: "1400px",
         s145: "1450px",
       },
     },

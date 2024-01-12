@@ -32,7 +32,7 @@ export default function ProjectsSection() {
 
         grid 
         grid-cols-[repeat(8,1fr)]
-        grid-rows-[auto,auto,auto,repeat(2,1fr)]
+        grid-rows-[auto,auto,auto,auto,auto]
       
         gap-[1rem] 
        rounded-[2rem]
