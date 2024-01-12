@@ -25,7 +25,7 @@ const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 export default function KitchenCarousel() {
   return (
-    <div className="s100:col-span-4... col-span-full  max-h-[40rem] overflow-hidden rounded-[1rem] s60:order-6">
+    <div className="col-span-full  max-h-[40rem] overflow-hidden rounded-[1rem] s60:order-6">
       <Swiper
         spaceBetween={32}
         slidesPerView={1}
@@ -37,14 +37,11 @@ export default function KitchenCarousel() {
           disableOnInteraction: true,
         }}
         navigation
-        className="mt-[1rem]... h-full"
-
+        className="h-full"
         keyboard={{
           enabled: true,
-          pageUpDown:false
+          pageUpDown: false,
         }}
-    
-
       >
         <SwiperSlide>
           <SlideOne />
@@ -106,12 +103,10 @@ function SlideOne() {
 
 function SlideTwo() {
   return (
-    <div className="flex h-full flex-col s40:flex-row... bg-yellow-300">
-
-      <div className="flex flex-col s40:flex-row justify-around s40:justify-center grow bg-blue-300... max-w-[30rem] mx-auto">  
-    
-        <div className=" flex flex-col justify-end bg-red-700... text-[1.4rem] s40:text-[2rem] s70:text-[2.5rem] order-1">
-          <div className="flex w-[4em] mx-auto s40:w-auto s40:h-[3em] s40:flex-col justify-between mb-[.5em] s40:mb-[2em] s40:mx-[.5em]">
+    <div className="s40:flex-row... flex h-full flex-col bg-yellow-300">
+      <div className="bg-blue-300... mx-auto flex max-w-[30rem] grow flex-col justify-around s40:flex-row s40:justify-center">
+        <div className=" bg-red-700... order-1 flex flex-col justify-end text-[1.4rem] s40:text-[2rem] s70:text-[2.5rem]">
+          <div className="mx-auto mb-[.5em] flex w-[4em] justify-between s40:mx-[.5em] s40:mb-[2em] s40:h-[3em] s40:w-auto s40:flex-col">
             <Link
               href="https://kitchendisplay.netlify.app/"
               // passHref={true}
@@ -132,9 +127,7 @@ function SlideTwo() {
           </div>
         </div>
 
-
-
-        <div className=" flex  grow flex-col  justify-evenly bg-white... px-4 s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem] s40:order-2">
+        <div className=" bg-white...  flex grow  flex-col justify-evenly px-4 s40:order-2 s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem]">
           <h3 className="text-[1.3em] font-semibold">KDS app</h3>
           {/* <p>Those orders go straight to the kitchen</p> */}
           <p>
@@ -142,22 +135,7 @@ function SlideTwo() {
             details displayed on a timline.
           </p>
         </div>
-
-
-
-
       </div>
-
-
-
-
-
-
-
-
-
-
-
 
       <div className="bg-yellow-200... p-4 pt-0">
         <Image
@@ -174,11 +152,23 @@ function SlideTwo() {
 
 function SlideThree() {
   return (
-    <div className="bg-blue-200... flex h-full  w-full flex-col bg-yellow-300">
-      <div className="grow s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem]">
-        Watch this intro showcasing the applications features.(1:17)
+    <div className="
+    bg-yellow-300 s45:text-[1.3rem]  s60:text-[1.6rem] s80:text-[1.8rem]
+    
+    flex h-full  w-full flex-col 
+     
+    ">
+
+    
+   
+      <div className="grow flex justify-center items-center w-[70%] mx-auto">
+        <p>
+          This intro video showcases the applications features.(1:17)
+        </p>
       </div>
-      <div className="w-[50%]... aspect-video p-[1rem] ">
+
+
+      <div className=" aspect-video p-[1rem] ">
         <ReactPlayer
           width="100%"
           height="100%"
@@ -191,6 +181,9 @@ function SlideThree() {
           className="border-2 border-black"
         />
       </div>
+
+
+
     </div>
   );
 }

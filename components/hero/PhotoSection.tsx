@@ -8,7 +8,7 @@ export default function PhotoSection() {
   return (
     <>
       <motion.section
-        initial={{ x: "-10%", opacity: 0 }}
+        initial={{ x: "-10px", opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.4 }}
