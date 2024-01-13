@@ -43,8 +43,8 @@ export default function KitchenHeadingSection() {
         <motion.div
           initial={{ y: "10px", opacity: 0 }}
           whileInView={{ y: "0%", opacity: 1 }}
-          viewport={{ once: true, margin: "0px 0px -200px 0px" }}
-          transition={{ delay: .2, duration: 0.4 }}
+          viewport={{ once: true, margin: "0px 0px -300px 0px" }}
+          transition={{ delay: .3, duration: 0.4 }}
         >
           <p className="mb-[1em] ml-[1em]">
             In a busy restaurant, speed and efficiency are the key to success.

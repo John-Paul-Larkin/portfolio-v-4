@@ -8,7 +8,11 @@ import CoduIcon from "@/icons/codu.svg";
 
 export default function CoduSection() {
   return (
-    <div
+    <motion.div
+    initial={{ x: "0px", y: "10px", opacity: 0 }}
+        whileInView={{ x: "0%", y: 0, opacity: 1 }}
+        viewport={{ once: true, margin: "0px 0px -200px 0px" }}
+        transition={{ delay: 0.2, duration: 0.4 }}
       className="  s85:mt-[2rem] s85:gap-[2rem] s85:p-[2rem]
 
      mt-[1rem] grid grid-cols-[repeat(8,1fr)] grid-rows-1  gap-4  overflow-hidden 
@@ -23,15 +27,28 @@ export default function CoduSection() {
         transition={{ delay: 0.2, duration: 0.4 }}
         className="col-span-full min-h-[20rem] rounded-[1rem] bg-white s85:col-span-3"
       ></motion.div> */}
-    </div>
+    </motion.div>
   );
 }
 
 function Codu() {
   return (
-    <div className="relative col-span-full flex flex-col overflow-hidden rounded-[1rem]  bg-space s60:flex-row">
+    <motion.div 
+    initial={{ x: "10px", opacity: 0 }}
+          whileInView={{ x: "0%", opacity: 1 }}
+          viewport={{ once: true, margin: "0px 0px -200px 0px" }}
+          transition={{ delay: .2, duration: 0.4 }}
+    
+    className="relative col-span-full flex flex-col overflow-hidden rounded-[1rem]  bg-space s60:flex-row">
       <div className=" m-[1rem] text-white s100:w-[50%] bg-yellow-300...">
-        <div className="mx-auto max-w-[30rem]
+        <motion.div 
+        initial={{ y: "10px", opacity: 0 }}
+        whileInView={{ y: "0%", opacity: 1 }}
+        viewport={{ once: true, margin: "0px 0px -300px 0px" }}
+        transition={{ delay: .3, duration: 0.4 }}
+        
+        
+        className="mx-auto max-w-[30rem]
          s70:text-[1.3rem]
          s120:text-[1.5rem]
         
@@ -54,7 +71,7 @@ function Codu() {
             </a>
             on gihub.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       <div className="s85:flex-row flex flex-col items-center s60:m-[1rem] bg-yellow-300... s100:w-[50%] s100:justify-evenly">
@@ -94,6 +111,6 @@ function Codu() {
           </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
