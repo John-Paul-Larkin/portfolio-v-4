@@ -1,29 +1,22 @@
-import TypeScriptIcon from "@/icons/tech-icons/typescript.svg";
-import ReactIcon from "@/icons/tech-icons/react.svg";
-import FirebaseIcon from "@/icons/tech-icons/firebase.svg";
-
-import React from "react";
-import Image from "next/image";
 import GithubIcon from "@/icons/github.svg";
+import OpenIcon from "@/icons/openIcon.svg";
+import FirebaseIcon from "@/icons/tech-icons/firebase.svg";
+import ReactIcon from "@/icons/tech-icons/react.svg";
+import TypeScriptIcon from "@/icons/tech-icons/typescript.svg";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+import React from "react";
+
+import kitchenDisplay from "@/public/KitchenDisplay2.webp";
+import posMove from "@/public/posMove.webp";
+import dynamic from "next/dynamic";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
-import dynamic from "next/dynamic";
-import kitchenDisplay from "@/public/KitchenDisplay2.webp";
-import posMove from "@/public/posMove.webp";
-import OpenIcon from "@/icons/openIcon.svg";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-  Keyboard,
-} from "swiper/modules";
 import Link from "next/link";
+import { Autoplay, Keyboard, Navigation, Scrollbar } from "swiper/modules";
 
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
@@ -64,7 +57,7 @@ export default function KitchenCarousel() {
 function SlideOne() {
   return (
     <div className="flex h-full bg-yellow-300 ">
-      <div className=" grow...  bg-white... mx-auto my-auto flex h-full max-h-[35rem] max-w-[30rem] flex-col justify-evenly p-4 s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem]">
+      <div className="mx-auto my-auto flex h-full max-h-[35rem] max-w-[30rem] flex-col justify-evenly p-4 s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem]">
         <h3 className="text-[1.3em] font-semibold">POS app</h3>
         <p>Wait staff enter orders from the restaurant floor.</p>
         <p>Each menu item is completely customisable.</p>
@@ -92,13 +85,11 @@ function SlideOne() {
         </div>
       </div>
 
-      <div className="bg-blue-400... mb-4 mr-4 flex h-full min-w-[50%] items-center justify-center">
+      <div className="mb-4 mr-4 flex h-full min-w-[50%] items-center justify-center">
         <Image
           src={posMove}
           alt="animated example of the point of sale application"
-          // style={{ objectFit: "cover" }}
-
-          className="p-[1rem]... w-fit... h-full w-auto object-contain"
+          className="h-full w-auto object-contain"
         />
       </div>
     </div>
@@ -107,9 +98,9 @@ function SlideOne() {
 
 function SlideTwo() {
   return (
-    <div className="s40:flex-row... flex h-full flex-col bg-yellow-300">
-      <div className="bg-blue-300... mx-auto flex max-w-[30rem] grow flex-col justify-around s40:flex-row s40:justify-center">
-        <div className=" bg-red-700... order-1 flex flex-col justify-end text-[1.4rem] s40:text-[2rem] s70:text-[2.5rem]">
+    <div className="flex h-full flex-col bg-yellow-300">
+      <div className="mx-auto flex max-w-[30rem] grow flex-col justify-around s40:flex-row s40:justify-center">
+        <div className="order-1 flex flex-col justify-end text-[1.4rem] s40:text-[2rem] s70:text-[2.5rem]">
           <div className="mx-auto mb-[1em] mt-[.5em] flex w-[4em] justify-between s40:mx-[.5em] s40:mb-[2em] s40:h-[3em] s40:w-auto s40:flex-col">
             <Link
               href="https://kitchendisplay.netlify.app/"
@@ -117,7 +108,7 @@ function SlideTwo() {
               target="_blank"
               aria-label="link to live version of kitchen display app"
             >
-              <OpenIcon className="w-[1em] " />
+              <OpenIcon className="w-[1em]" />
             </Link>
 
             <Link
@@ -126,14 +117,13 @@ function SlideTwo() {
               target="_blank"
               aria-label="link to github of kitchen display project"
             >
-              <GithubIcon className="w-[1em] " />
+              <GithubIcon className="w-[1em]" />
             </Link>
           </div>
         </div>
 
-        <div className=" bg-white...  flex grow  flex-col justify-evenly px-4 s40:order-2 s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem]">
+        <div className="flex grow  flex-col justify-evenly px-4 s40:order-2 s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem]">
           <h3 className="text-[1.3em] font-semibold">KDS app</h3>
-          {/* <p>Those orders go straight to the kitchen</p> */}
           <p>
             The order is sent through to the kitchen, where the chef has all the
             details displayed on a timline.
@@ -141,13 +131,13 @@ function SlideTwo() {
         </div>
       </div>
 
-      <div className="bg-yellow-200... p-4 pt-0">
+      <div className="p-4 pt-0">
         <Image
           src={kitchenDisplay}
           alt="animated example showing orders on the kitchen display app"
           // style={{ objectFit: "cover" }}
           // unoptimized
-          className="p-[4rem]... w-full  border-2  border-black object-contain"
+          className="w-full  border-2  border-black object-contain"
         />
       </div>
     </div>
@@ -156,29 +146,20 @@ function SlideTwo() {
 
 function SlideThree() {
   return (
-    <div
-      className="
-    flex h-full  w-full flex-col
-    
-    bg-yellow-300 s45:text-[1.3rem]  s60:text-[1.6rem] s80:text-[1.8rem] 
-
-
-    s100:flex-row
-    "
-    >
-      <div className="bg-blue-500... s100:min-w-[30rem] grow flex flex-col justify-evenly">
-        <div className="bg-red-400... mx-auto flex w-[70%] max-w-[28rem] grow... items-center justify-center s100:grow-0...">
+    <div className="flex h-full  w-full flex-col bg-yellow-300 s45:text-[1.3rem]  s60:text-[1.6rem] s80:text-[1.8rem] s100:flex-row">
+      <div className="flex grow flex-col justify-evenly s100:min-w-[30rem]">
+        <div className="mx-auto flex w-[70%] max-w-[28rem] items-center justify-center">
           <p>This intro video showcases the applications features.(1:17)</p>
         </div>
 
-        <div className="mx-auto my-[.0em] flex w-[11em] justify-between bg-red-400... s100:w-[90%] s100:max-w-[8em]">
+        <div className="mx-auto flex w-[11em] justify-between s100:w-[90%] s100:max-w-[8em]">
           <TypeScriptIcon className="w-[2em]" />
           <ReactIcon className="w-[2em]" />
           <FirebaseIcon className="w-[2em]" />
         </div>
       </div>
 
-      <div className=" bg-gray-300... flex aspect-video w-full justify-center p-[1rem] s80:max-h-[25rem] s100:max-h-max s100:aspect-auto s100:p-4  s100:pl-0">
+      <div className="flex aspect-video w-full justify-center p-[1rem] s80:max-h-[25rem] s100:aspect-auto s100:max-h-max s100:p-4  s100:pl-0">
         <ReactPlayer
           width="100%"
           height="100%"
@@ -186,9 +167,8 @@ function SlideThree() {
           light={true}
           volume={1}
           controls={true}
-          // muted={false}
           playing={true}
-          className="h-full... w-full... border-2 border-black"
+          className="border-2 border-black"
         />
       </div>
     </div>

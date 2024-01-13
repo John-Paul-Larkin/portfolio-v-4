@@ -4,9 +4,9 @@ import "/styles/name-animate.css";
 
 export default function HeroBannerName() {
   return (
-    <section className="order-0 s45:col-span-2 s45:h-[14rem] s60:col-span-8 s80:h-box-height s80:flex-row flex h-[10rem] flex-col overflow-hidden rounded-[2rem] bg-navy-300">
-      <div className="s80:pl-[1rem] s120:px-[1rem] s120:pr-0  flex  items-center justify-center ">
-        <div className=" s80:mt-0 s80:block s80:w-[8rem] s80:text-[2.5rem] s120:w-auto s120:text-[3rem] s120:leading-[4rem] s120:tracking-[-3px] s145:text-[4rem] mt-[2rem] flex text-[1.5rem] font-[700] leading-[2.5rem] text-white">
+    <section className="order-0 flex h-[10rem] flex-col overflow-hidden rounded-[2rem] bg-navy-300 s45:col-span-2 s45:h-[14rem] s60:col-span-8 s80:h-box-height s80:flex-row">
+      <div className="flex items-center justify-center  s80:pl-[1rem]  s120:px-[1rem] s120:pr-0 ">
+        <div className=" mt-[2rem] flex text-[1.5rem] font-[700] leading-[2.5rem] text-white s80:mt-0 s80:block s80:w-[8rem] s80:text-[2.5rem] s120:w-auto s120:text-[3rem] s120:leading-[4rem] s120:tracking-[-3px] s145:text-[4rem]">
           <p className="s80:w-fit ">
             Hello! <span className="s80:hidden">&nbsp;</span>
           </p>
@@ -16,7 +16,7 @@ export default function HeroBannerName() {
               whileInView={{ y: "0%" }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="s120:whitespace-nowrap inline-block"
+              className="inline-block s120:whitespace-nowrap"
             >
               My name <span className="s80:hidden">&nbsp;</span>
             </motion.p>

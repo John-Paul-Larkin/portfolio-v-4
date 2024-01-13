@@ -16,7 +16,6 @@ export default function PhotoSection() {
       >
         <Image
           src={wrangler}
-          // fill={true}
           alt="JP Larkin standing in front of computer"
           style={{ objectFit: "cover", objectPosition: "0px 0px" }}
           priority={true}

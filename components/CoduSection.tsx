@@ -1,60 +1,42 @@
-"use client";
-
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import moon from "@/public/moon.png";
 import CoduIcon from "@/icons/codu.svg";
+import moon from "@/public/moon.png";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import React from "react";
 
 export default function CoduSection() {
   return (
     <motion.div
-    initial={{ x: "0px", y: "10px", opacity: 0 }}
-        whileInView={{ x: "0%", y: 0, opacity: 1 }}
-        viewport={{ once: true, margin: "0px 0px -200px 0px" }}
-        transition={{ delay: 0.2, duration: 0.4 }}
-      className="  s85:mt-[2rem] s85:gap-[2rem] s85:p-[2rem]
-
-     mt-[1rem] grid grid-cols-[repeat(8,1fr)] grid-rows-1  gap-4  overflow-hidden 
-      rounded-[2rem]   bg-overall-bg p-[1rem]"
+      initial={{ x: "0px", y: "10px", opacity: 0 }}
+      whileInView={{ x: "0%", y: 0, opacity: 1 }}
+      viewport={{ once: true, margin: "0px 0px -200px 0px" }}
+      transition={{ delay: 0.2, duration: 0.4 }}
+      className="  s85:mt-[2rem] s85:gap-[2rem] s85:p-[2rem] mt-[1rem] grid grid-cols-[repeat(8,1fr)] grid-rows-1 gap-4 overflow-hidden rounded-[2rem] bg-overall-bg p-[1rem]"
     >
       <Codu />
-
-      {/* <motion.div
-        initial={{ x: "10px", y: "10px", opacity: 0 }}
-        whileInView={{ x: "0%", y: 0, opacity: 1 }}
-        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-        transition={{ delay: 0.2, duration: 0.4 }}
-        className="col-span-full min-h-[20rem] rounded-[1rem] bg-white s85:col-span-3"
-      ></motion.div> */}
     </motion.div>
   );
 }
 
 function Codu() {
   return (
-    <motion.div 
-    initial={{ x: "10px", opacity: 0 }}
-          whileInView={{ x: "0%", opacity: 1 }}
-          viewport={{ once: true, margin: "0px 0px -200px 0px" }}
-          transition={{ delay: .2, duration: 0.4 }}
-    
-    className="relative col-span-full flex flex-col overflow-hidden rounded-[1rem]  bg-space s60:flex-row">
-      <div className=" m-[1rem] text-white s100:w-[50%] bg-yellow-300...">
-        <motion.div 
-        initial={{ y: "10px", opacity: 0 }}
-        whileInView={{ y: "0%", opacity: 1 }}
-        viewport={{ once: true, margin: "0px 0px -300px 0px" }}
-        transition={{ delay: .3, duration: 0.4 }}
-        
-        
-        className="mx-auto max-w-[30rem]
-         s70:text-[1.3rem]
-         s120:text-[1.5rem]
-        
-        ">
-          <h3 className=" p-[1em] text-4xl font-extrabold">Open Source</h3>
-          <p className="">
+    <motion.div
+      initial={{ x: "10px", opacity: 0 }}
+      whileInView={{ x: "0%", opacity: 1 }}
+      viewport={{ once: true, margin: "0px 0px -200px 0px" }}
+      transition={{ delay: 0.2, duration: 0.4 }}
+      className="relative col-span-full flex flex-col overflow-hidden rounded-[1rem]  bg-space s60:flex-row"
+    >
+      <div className="m-[1rem] text-white s100:w-[50%]">
+        <motion.div
+          initial={{ y: "10px", opacity: 0 }}
+          whileInView={{ y: "0%", opacity: 1 }}
+          viewport={{ once: true, margin: "0px 0px -300px 0px" }}
+          transition={{ delay: 0.3, duration: 0.4 }}
+          className="mx-auto max-w-[30rem] s70:text-[1.3rem] s120:text-[1.5rem]"
+        >
+          <h3 className="p-[1em] text-4xl font-extrabold">Open Source</h3>
+          <p>
             Codú is Ireland&apos;s largest coding community. The perfect place
             to learn, contribute and network with like minded individuals.
           </p>
@@ -74,9 +56,9 @@ function Codu() {
         </motion.div>
       </div>
 
-      <div className="s85:flex-row flex flex-col items-center s60:m-[1rem] bg-yellow-300... s100:w-[50%] s100:justify-evenly">
+      <div className="s85:flex-row flex flex-col items-center s60:m-[1rem] s100:w-[50%] s100:justify-evenly">
         <div className="s120:flex s120:flex-col s120:items-center">
-          <div className="s85:w-[15rem] s120:w-[20rem] flex  justify-center s60:pt-[1rem]">
+          <div className="s85:w-[15rem] flex justify-center  s60:pt-[1rem] s120:w-[20rem]">
             <CoduIcon className="h-[4rem] s120:h-[5rem]" />
           </div>
 
@@ -89,7 +71,7 @@ function Codu() {
           </p>
         </div>
 
-        <div className="bg-yellow-300... s85:w-[10rem] flex justify-center s100:w-auto">
+        <div className="s85:w-[10rem] flex justify-center s100:w-auto">
           <motion.div
             className="s85:left-[3rem] relative top-[2rem] z-0 aspect-square h-[15rem] s100:left-0 "
             initial={{ rotate: 0, x: "0px", y: 0 }}

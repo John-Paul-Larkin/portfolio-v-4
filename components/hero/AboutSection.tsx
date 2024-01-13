@@ -4,14 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 // import "swiper/css/navigation";
 import "swiper/css/scrollbar";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-import ClickArrow from "@/icons/click-arrow.svg";
+import { Navigation, Scrollbar, Autoplay } from "swiper/modules";
 
 export default function AboutSection() {
   return (
@@ -20,7 +13,7 @@ export default function AboutSection() {
       whileInView={{ x: "0%", opacity: 1 }}
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.4 }}
-      className="s45:m-0 s60:col-span-4 s60:text-3xl s70:row-span-2 s70:text-[34px] s80:row-span-1 s100:text-5xl order-1 min-h-[20rem] w-full min-w-0 rounded-[2rem] bg-red-400  pb-2 text-2xl font-extrabold"
+      className="order-1 min-h-[20rem] w-full min-w-0 rounded-[2rem] bg-red-400 pb-2 text-2xl font-extrabold s45:m-0 s60:col-span-4 s60:text-3xl s70:row-span-2  s70:text-[34px] s80:row-span-1 s100:text-5xl"
     >
       <Swiper
         spaceBetween={32}
@@ -33,7 +26,7 @@ export default function AboutSection() {
           disableOnInteraction: true,
         }}
         // navigation
-        className="max-w-[80%]... bg-blue-700... h-full w-full"
+        className="h-full w-full"
       >
         <SwiperSlide>
           <div className="flex h-full items-center justify-center">
@@ -48,8 +41,8 @@ export default function AboutSection() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="bg-yellow-400... flex h-full w-full items-center justify-center overflow-hidden ">
-            <div className="bg-red-500... w-[90%]">
+          <div className=" flex h-full w-full items-center justify-center overflow-hidden ">
+            <div className="w-[90%]">
               <p className="relative">
                 I build full-stack javascript{" "}
                 <span className="text-slate-50">projects.</span>
@@ -80,38 +73,15 @@ export default function AboutSection() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex h-full items-center justify-center">
-            <div className="bg-red-500... w-[90%]">
-              {/* <p className="mb-[1em]">Go ahead.</p> */}
-
+            <div className="w-[90%]">
               <p className="mb-[1em]">Want to make my day?</p>
-              <a
-                href="mailto: johnplarkin@gmail.com"
-                className=" text-slate-50... text-[.7em]"
-              >
+              <a href="mailto: johnplarkin@gmail.com" className="text-[.7em]">
                 johnplarkin@gmail.com
               </a>
-
-              {/* <p className="mt-[1em]">It will make my day!</p> */}
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
     </motion.section>
   );
-}
-
-{
-  /* <motion.div
-    initial={{ scale: 1, rotate:'260deg' }}
-    whileInView={{ scale: 0.9, rotate:'260deg' }}
-    transition={{
-      repeat: Infinity,
-      duration: 1,
-      ease: "circInOut",
-      repeatType: "reverse",
-    }}
-    className="bg-white... absolute h-[10rem] w-[10rem]  top-[-2rem] right-[-2rem]"
-  >
-    <ClickArrow />
-  </motion.div> */
 }
