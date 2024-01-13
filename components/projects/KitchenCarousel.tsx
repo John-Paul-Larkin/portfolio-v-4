@@ -166,8 +166,8 @@ function SlideThree() {
     s100:flex-row
     "
     >
-      <div className="bg-blue-500... s100:flex s100:flex-col s100:justify-evenly">
-        <div className="bg-red-400... mx-auto flex w-[70%] max-w-[28rem] grow items-center justify-center s100:grow-0">
+      <div className="bg-blue-500... s100:min-w-[30rem] grow flex flex-col justify-evenly">
+        <div className="bg-red-400... mx-auto flex w-[70%] max-w-[28rem] grow... items-center justify-center s100:grow-0...">
           <p>This intro video showcases the applications features.(1:17)</p>
         </div>
 

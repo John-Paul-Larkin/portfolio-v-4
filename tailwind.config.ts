@@ -27,7 +27,9 @@ const config: Config = {
         "box-height": "15.875rem",
       },
       colors: {
-        "overall-bg": "hsl(227, 28%, 43%)",
+        "overall-bg-original": "hsl(227, 28%, 43%)",
+        "overall-bg": "#f8fafc",
+
         "box-bg": "hsl(111, 7%, 20%)",
         codeGradient: "hsla(336, 72%, 52%, 1), hsla(26, 95%, 61%, 1)",
 
