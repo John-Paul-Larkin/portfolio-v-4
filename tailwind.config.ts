@@ -13,18 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "radial-bg":
-          // "background: rgb(75,85,118);
-          "radial-gradient(circle, #4f5c8c, #45589e, #3a54b0, #2e4fc1, #2448d1);",
-
-        dots: "url('/dots.svg')",
+       
+        "radial-gradient(circle, #4f5c8c, #45589e, #3a54b0, #2e4fc1, #2448d1);",
         space: "url('/coduBg.jpeg')",
       },
       maxWidth: {
         "container-width": "100rem",
-      },
-      height: {
-        // "box-height": "21.875rem",
-        "box-height": "15.875rem",
       },
       colors: {
         "overall-bg-original": "hsl(227, 28%, 43%)",
@@ -38,7 +32,7 @@ const config: Config = {
         coduColor: "#f17f06",
         cream: "hsl(0, 0%, 85%)",
         bgCream: "hsl(22, 15%, 90%)",
-        // "bg-color": "hsl(227, 28%, 43%)",
+   
         treeBG: "#f5efea",
         green: "#40c2a6",
         waiterYellow: "#ffff00",
@@ -74,7 +68,6 @@ const config: Config = {
         s40: "400px",
         s45: "450px",
         s50: "500px",
-
         s60: "600px",
         s70: "700px",
         s80: "800px",

@@ -10,7 +10,7 @@ export default function KitchenImageSection() {
       whileInView={{ x: "0%", opacity: 1 }}
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.4 }}
-      className="relative col-span-full  overflow-hidden rounded-[1rem] bg-navy-300 s60:order-5 s100:order-2 s100:col-span-4 s100:row-span-3 "
+      className="relative col-span-full  overflow-hidden rounded-[1rem] bg-navy-100 s60:order-5 s100:order-2 s100:col-span-4 s100:row-span-3 "
     >
       <div className="flex h-full items-center overflow-hidden">
         <Image

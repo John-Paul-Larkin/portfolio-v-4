@@ -8,7 +8,7 @@ export default function ProjectsSection() {
   return (
     <>
       <div className=" mt-[1rem] rounded-[2rem] bg-overall-bg p-[1rem] s80:mt-[2rem] s80:p-[2rem]">
-        <h2 className="rounded-[1rem] bg-navy-300 p-4 text-4xl font-extrabold text-white">
+        <h2 className="rounded-[1rem] bg-navy-100 p-4 text-4xl font-extrabold text-white">
           Projects
         </h2>
       </div>

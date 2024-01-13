@@ -10,7 +10,7 @@ export default function SvgSection() {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.6, duration: 0.4 }}
-        className="bg-navy relative h-full w-full"
+        className=" relative h-full w-full"
       >
         <Image
           src="/undraw_programming_2svr.svg"

@@ -85,8 +85,7 @@ function Codu() {
             }}
           >
             <Image
-              src={moon}
-              // fill={true}
+              src={moon}        
               alt="full moon"
               style={{ objectFit: "cover" }}
             />
