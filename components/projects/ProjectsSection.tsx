@@ -25,7 +25,7 @@ export default function ProjectsSection() {
         s80:p-[2rem]
         mb-[100rem]
         
-        grid-rows-[auto,auto,auto,auto,auto]
+        grid-rows-[repeat(3,auto)]
         s60:grid-rows-[auto,auto,repeat(2,1fr)] 
         s70:grid-rows-[repeat(3,auto)]
    

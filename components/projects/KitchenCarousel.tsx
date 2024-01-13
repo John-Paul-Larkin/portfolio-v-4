@@ -1,3 +1,7 @@
+import TypeScriptIcon from "@/icons/tech-icons/typescript.svg";
+import ReactIcon from "@/icons/tech-icons/react.svg";
+import FirebaseIcon from "@/icons/tech-icons/firebase.svg";
+
 import React from "react";
 import Image from "next/image";
 import GithubIcon from "@/icons/github.svg";
@@ -25,7 +29,7 @@ const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 export default function KitchenCarousel() {
   return (
-    <div className="col-span-full  max-h-[40rem] overflow-hidden rounded-[1rem] s60:order-6">
+    <div className="col-span-full max-h-[40rem] overflow-hidden rounded-[1rem]  s60:order-6">
       <Swiper
         spaceBetween={32}
         slidesPerView={1}
@@ -33,7 +37,7 @@ export default function KitchenCarousel() {
         modules={[Scrollbar, Autoplay, Navigation, Keyboard]}
         scrollbar={{ draggable: true }}
         autoplay={{
-          delay: 4000,
+          delay: 3000,
           disableOnInteraction: true,
         }}
         navigation
@@ -106,7 +110,7 @@ function SlideTwo() {
     <div className="s40:flex-row... flex h-full flex-col bg-yellow-300">
       <div className="bg-blue-300... mx-auto flex max-w-[30rem] grow flex-col justify-around s40:flex-row s40:justify-center">
         <div className=" bg-red-700... order-1 flex flex-col justify-end text-[1.4rem] s40:text-[2rem] s70:text-[2.5rem]">
-          <div className="mx-auto mb-[.5em] flex w-[4em] justify-between s40:mx-[.5em] s40:mb-[2em] s40:h-[3em] s40:w-auto s40:flex-col">
+          <div className="mx-auto mb-[1em] mt-[.5em] flex w-[4em] justify-between s40:mx-[.5em] s40:mb-[2em] s40:h-[3em] s40:w-auto s40:flex-col">
             <Link
               href="https://kitchendisplay.netlify.app/"
               // passHref={true}
@@ -152,23 +156,29 @@ function SlideTwo() {
 
 function SlideThree() {
   return (
-    <div className="
-    bg-yellow-300 s45:text-[1.3rem]  s60:text-[1.6rem] s80:text-[1.8rem]
+    <div
+      className="
+    flex h-full  w-full flex-col
     
-    flex h-full  w-full flex-col 
-     
-    ">
+    bg-yellow-300 s45:text-[1.3rem]  s60:text-[1.6rem] s80:text-[1.8rem] 
 
-    
-   
-      <div className="grow flex justify-center items-center w-[70%] mx-auto">
-        <p>
-          This intro video showcases the applications features.(1:17)
-        </p>
+
+    s100:flex-row
+    "
+    >
+      <div className="bg-blue-500... s100:flex s100:flex-col s100:justify-evenly">
+        <div className="bg-red-400... mx-auto flex w-[70%] max-w-[28rem] grow items-center justify-center s100:grow-0">
+          <p>This intro video showcases the applications features.(1:17)</p>
+        </div>
+
+        <div className="mx-auto my-[.0em] flex w-[11em] justify-between bg-red-400... s100:w-[90%] s100:max-w-[8em]">
+          <TypeScriptIcon className="w-[2em]" />
+          <ReactIcon className="w-[2em]" />
+          <FirebaseIcon className="w-[2em]" />
+        </div>
       </div>
 
-
-      <div className=" aspect-video p-[1rem] ">
+      <div className=" bg-gray-300... flex aspect-video w-full justify-center p-[1rem] s80:max-h-[25rem] s100:max-h-max s100:aspect-auto s100:p-4  s100:pl-0">
         <ReactPlayer
           width="100%"
           height="100%"
@@ -178,12 +188,9 @@ function SlideThree() {
           controls={true}
           // muted={false}
           playing={true}
-          className="border-2 border-black"
+          className="h-full... w-full... border-2 border-black"
         />
       </div>
-
-
-
     </div>
   );
 }

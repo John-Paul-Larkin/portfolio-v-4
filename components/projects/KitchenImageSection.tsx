@@ -1,13 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import annoyedCustomer from "@/public/annoyedCustomer.jpg";
+import { motion } from "framer-motion";
 
 export default function KitchenImageSection() {
   return (
-    <div className="s60:order-5 s100:order-2  s100:col-span-4 s100:row-span-3 relative col-span-full overflow-hidden rounded-[1rem] bg-navy-300 ">
-      <div className=" 
-      bg-red-500... h-full flex overflow-hidden items-center
-      ">
+    <motion.div
+      initial={{ x: "10px", opacity: 0 }}
+      whileInView={{ x: "0%", opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: .2, duration: 0.4 }}
+      className="relative col-span-full  overflow-hidden rounded-[1rem] bg-navy-300 s60:order-5 s100:order-2 s100:col-span-4 s100:row-span-3 "
+    >
+      <div
+        className=" 
+      bg-red-500... flex h-full items-center overflow-hidden
+      "
+      >
         {/* flex h-full flex-col items-center justify-start overflow-hidden */}
         <Image
           src={annoyedCustomer}
@@ -15,11 +24,15 @@ export default function KitchenImageSection() {
           alt="Waiter standing over annoyed customer"
           // style={{ objectFit: "cover", }}
 
-          className=" s80:w-[90%] s100:w-[100%] s100:h-[75%] s140:h-[100%] s140:w-[90%] object-cover"
+          className=" object-cover s80:w-[90%] s100:h-[75%] s100:w-[100%] s140:h-[100%] s140:w-[90%]"
         />
-
       </div>
-      <p
+      <motion.p
+        initial={{ y: "10px", opacity: 0 }}
+        whileInView={{ y: "0%", opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
+        viewport={{ once: true, margin: "0px 0px -400px 0px" }}
+
         className="
 
         absolute 
@@ -63,7 +76,7 @@ export default function KitchenImageSection() {
       >
         What&apos;s taking
         <br /> so long?
-      </p>
-    </div>
+      </motion.p>
+    </motion.div>
   );
 }

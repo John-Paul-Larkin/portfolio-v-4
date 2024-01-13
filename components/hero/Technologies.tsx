@@ -2,14 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import Tree from "@/icons/tree.svg";
 import JavaScriptIcon from "@/icons/tech-icons/javascript.svg";
+
 import TypeScriptIcon from "@/icons/tech-icons/typescript.svg";
 import ReactIcon from "@/icons/tech-icons/react.svg";
+import FirebaseIcon from "@/icons/tech-icons/firebase.svg";
+
+
 import NodeIcon from "@/icons/tech-icons/node.svg";
 import NextIcon from "@/icons/tech-icons/next.svg";
 import HtmlIcon from "@/icons/tech-icons/html.svg";
 import CssIcon from "@/icons/tech-icons/css.svg";
 import ReduxIcon from "@/icons/tech-icons/redux.svg";
-import FirebaseIcon from "@/icons/tech-icons/firebase.svg";
 import TailwindIcon from "@/icons/tech-icons/tailwind.svg";
 import FramerIcon from "@/icons/tech-icons/framer.svg";
 import MysqlIcon from "@/icons/tech-icons/mysql.svg";
@@ -20,7 +23,7 @@ export default function Technologies() {
   return (
     <>
       <motion.section
-        initial={{ x: "10%", opacity: 0 }}
+        initial={{ x: "10px", opacity: 0 }}
         whileInView={{ x: "0%", opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.4 }}

@@ -29,7 +29,7 @@ export default function AboutSection() {
         modules={[Navigation, Scrollbar, Autoplay]}
         scrollbar={{ draggable: true }}
         autoplay={{
-          delay: 2000,
+          delay: 1800,
           disableOnInteraction: true,
         }}
         // navigation
