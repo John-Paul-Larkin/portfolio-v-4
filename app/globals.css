@@ -14,6 +14,6 @@
 
 @layer components {
   .btn-hover {
-    @apply rounded-full border-[.07em] border-black p-[.3em] hover:scale-110;
+    @apply rounded-full border-[.13em] border-black p-[.3em] hover:scale-110;
   }
 }

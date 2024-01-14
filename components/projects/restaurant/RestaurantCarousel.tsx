@@ -28,7 +28,7 @@ export default function RestaurantCarousel() {
       whileInView={{ x: "0", opacity: 1 }}
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.4 }}
-      className="col-span-full max-h-[40rem] overflow-hidden rounded-[1rem]  s60:order-6"
+      className="col-span-full max-h-[40rem] overflow-hidden rounded-[1rem]  s60:order-6 paragraph-text"
     >
       <Swiper
         spaceBetween={32}
@@ -64,11 +64,12 @@ export default function RestaurantCarousel() {
 function SlideOne() {
   return (
     <div className="flex h-full bg-yellow-300 ">
-      <div className="paragraph-text mx-auto my-auto flex h-full max-h-[35rem] max-w-[30rem] flex-col justify-evenly p-4 s60:p-8">
+      <div className=" mx-auto my-auto flex h-full max-h-[35rem] max-w-[30rem] flex-col justify-evenly p-4 s60:p-8">
         <h3 className="text-[1.3em] font-semibold">POS app</h3>
         <p>Wait staff enter orders from the restaurant floor.</p>
         <p>Each menu item is completely customisable.</p>
-        <div className=" flex justify-center text-[1.4rem] s40:text-[2rem] s70:text-[2.5rem] ">
+   
+        <div className=" flex justify-center ">
           <div className="flex w-[4em] justify-between">
             <Link
               href="https://kitchenpos.netlify.app/"
@@ -110,7 +111,7 @@ function SlideTwo() {
   return (
     <div className="flex h-full flex-col bg-yellow-300">
       <div className="mx-auto flex max-w-[30rem] grow flex-col justify-around s40:flex-row s40:justify-center">
-        <div className="order-1 flex flex-col justify-end text-[1.4rem] s40:text-[2rem] s70:text-[2.5rem]">
+        <div className="order-1 flex flex-col justify-end">
           <div className="mx-auto mb-[1em] mt-[.5em] flex w-[4em] justify-between s40:mx-[.5em] s40:mb-[2em] s40:h-[4em] s40:w-auto s40:flex-col">
             <Link
               href="https://kitchendisplay.netlify.app/"

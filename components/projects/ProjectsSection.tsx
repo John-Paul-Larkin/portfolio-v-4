@@ -1,8 +1,8 @@
-import React from "react";
-
 import stockTake from "@/public/stockTake.webp";
+import wim from "@/public/wim.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import React from "react";
 import KitchenCarousel from "./restaurant/RestaurantCarousel";
 import KitchenHeadingSection from "./restaurant/RestaurantHeadingSection";
 import KitchenImageSection from "./restaurant/RestaurantImageSection";
@@ -25,7 +25,7 @@ export default function ProjectsSection() {
 
       <section
         className="mt-[1rem] grid grid-cols-[repeat(8,1fr)] grid-rows-[repeat(3,auto)] gap-[1rem] 
-        rounded-[2rem] bg-overall-bg p-[1rem] s60:grid-rows-[auto,auto,repeat(2,1fr)] s70:grid-rows-[repeat(3,auto)] s80:mt-[2rem] s80:gap-[2rem] s80:p-[2rem]"
+        rounded-[2rem] bg-overall-bg p-[1rem] s60:grid-rows-[auto,auto,auto] s70:grid-rows-[repeat(3,auto)] s80:mt-[2rem] s80:gap-[2rem] s80:p-[2rem]"
       >
         <KitchenHeadingSection />
         <KitchenImageSection />
@@ -34,22 +34,44 @@ export default function ProjectsSection() {
 
       <section
         className="mt-[1rem] grid grid-cols-[repeat(8,1fr)] gap-[1rem] 
-        rounded-[2rem] bg-overall-bg p-[1rem] s80:mt-[2rem] s80:gap-[2rem] "
+        rounded-[2rem] bg-overall-bg p-[1rem] s80:mt-[2rem] s80:gap-[2rem] 
+        
+        s130:grid-rows-[minmax(100px,22rem)_minmax(100px,22rem)]
+       
+
+        "
       >
-        <WarehouseHeadingSection/>
-        <div className="col-span-full flex h-full w-full justify-end  overflow-hidden rounded-[1rem] bg-slate-700">
+        <WarehouseHeadingSection />
+        <div className="col-span-full flex h-full w-full justify-end  overflow-hidden rounded-[1rem] bg-slate-700 s100:col-span-4">
           <Image
             src={stockTake}
-            priority={false}
             alt="Man with clipboard counting stock items"
             className="object-cover"
           />
         </div>
+
+        <div className="col-span-full flex h-full w-full overflow-hidden rounded-[1rem] bg-slate-700 s100:col-span-4 s100:object-contain...">
+          <Image
+            src={wim}
+            alt="landing page of wim app, with vaious charts and metrics"
+            className="object-contain"
+          />
+        </div>
       </section>
+
+
+
+
+
+
+
+
+
+
 
       <section
         className="mb-[100rem]  mt-[1rem] grid grid-cols-[repeat(8,1fr)] gap-[1rem] 
-        rounded-[2rem] bg-overall-bg p-[1rem] s80:mt-[2rem] s80:gap-[2rem] "
+        rounded-[2rem] bg-overall-bg p-[1rem] s80:mt-[2rem] s80:gap-[2rem]  "
       >
         <div className="col-span-4 h-[50rem] bg-red-500"></div>
       </section>
