@@ -11,3 +11,9 @@
 .paragraph-text {
   @apply s45:text-[1.3rem] s60:text-[1.6rem] s80:text-[1.8rem];
 }
+
+@layer components {
+  .btn-hover {
+    @apply rounded-full border-[.07em] border-black p-[.3em] hover:scale-110;
+  }
+}

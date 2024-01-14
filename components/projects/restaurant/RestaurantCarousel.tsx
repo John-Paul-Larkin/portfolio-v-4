@@ -76,7 +76,9 @@ function SlideOne() {
               target="_blank"
               aria-label="link to live version of point of sale app"
             >
-              <OpenIcon className="w-[1em] " />
+              <div className="btn-hover">
+                <OpenIcon className="w-[.8em]" />
+              </div>
             </Link>
 
             <Link
@@ -85,7 +87,9 @@ function SlideOne() {
               target="_blank"
               aria-label="link to github of POS project"
             >
-              <GithubIcon className="w-[1em] " />
+              <div className="btn-hover">
+                <GithubIcon className="w-[.8em] " />
+              </div>
             </Link>
           </div>
         </div>
@@ -107,14 +111,16 @@ function SlideTwo() {
     <div className="flex h-full flex-col bg-yellow-300">
       <div className="mx-auto flex max-w-[30rem] grow flex-col justify-around s40:flex-row s40:justify-center">
         <div className="order-1 flex flex-col justify-end text-[1.4rem] s40:text-[2rem] s70:text-[2.5rem]">
-          <div className="mx-auto mb-[1em] mt-[.5em] flex w-[4em] justify-between s40:mx-[.5em] s40:mb-[2em] s40:h-[3em] s40:w-auto s40:flex-col">
+          <div className="mx-auto mb-[1em] mt-[.5em] flex w-[4em] justify-between s40:mx-[.5em] s40:mb-[2em] s40:h-[4em] s40:w-auto s40:flex-col">
             <Link
               href="https://kitchendisplay.netlify.app/"
               // passHref={true}
               target="_blank"
               aria-label="link to live version of kitchen display app"
             >
-              <OpenIcon className="w-[1em]" />
+              <div className="btn-hover">
+                <OpenIcon className="w-[.8em]" />
+              </div>
             </Link>
 
             <Link
@@ -123,7 +129,9 @@ function SlideTwo() {
               target="_blank"
               aria-label="link to github of kitchen display project"
             >
-              <GithubIcon className="w-[1em]" />
+              <div className="btn-hover">
+                <GithubIcon className="w-[.8em]" />
+              </div>
             </Link>
           </div>
         </div>
