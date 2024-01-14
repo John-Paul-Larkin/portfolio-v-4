@@ -11,7 +11,7 @@ export default function RestaurantHeadingSection() {
         whileInView={{ x: "0", opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className="col-span-full rounded-[1rem] bg-red-400 p-4 s45:text-[1.3rem] s60:order-1 s60:col-span-full s60:text-[1.6rem] s80:text-[1.8rem] s100:col-span-4 s100:row-span-3"
+        className="paragraph-text col-span-full rounded-[1rem] bg-red-400 p-4 s60:order-1 s60:col-span-full  s100:col-span-4 s100:row-span-3"
       >
         <h3 className="m-[1em] text-[1.3em] font-semibold">
           Restaurant management
@@ -43,3 +43,4 @@ export default function RestaurantHeadingSection() {
     </>
   );
 }
+

@@ -64,11 +64,10 @@ export default function RestaurantCarousel() {
 function SlideOne() {
   return (
     <div className="flex h-full bg-yellow-300 ">
-      <div className="mx-auto my-auto flex h-full max-h-[35rem] max-w-[30rem] flex-col justify-evenly p-4 s45:text-[1.3rem] s60:p-8 s60:text-[1.6rem] s80:text-[1.8rem]">
+      <div className="paragraph-text mx-auto my-auto flex h-full max-h-[35rem] max-w-[30rem] flex-col justify-evenly p-4 s60:p-8">
         <h3 className="text-[1.3em] font-semibold">POS app</h3>
         <p>Wait staff enter orders from the restaurant floor.</p>
         <p>Each menu item is completely customisable.</p>
-
         <div className=" flex justify-center text-[1.4rem] s40:text-[2rem] s70:text-[2.5rem] ">
           <div className="flex w-[4em] justify-between">
             <Link
