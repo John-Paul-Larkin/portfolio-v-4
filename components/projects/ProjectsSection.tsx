@@ -1,16 +1,22 @@
 import React from "react";
 
-import KitchenCarousel from "./KitchenCarousel";
-import KitchenHeadingSection from "./KitchenHeadingSection";
-import KitchenImageSection from "./KitchenImageSection";
+import KitchenCarousel from "./restaurant/RestaurantCarousel";
+import KitchenHeadingSection from "./restaurant/RestaurantHeadingSection";
+import KitchenImageSection from "./restaurant/RestaurantImageSection";
+import { motion } from "framer-motion";
 
 export default function ProjectsSection() {
   return (
     <>
-      <div className=" mt-[1rem] rounded-[2rem] bg-overall-bg p-[1rem] s80:mt-[2rem] s80:p-[2rem]">
-        <h2 className="rounded-[1rem] bg-navy-100 p-4 text-4xl font-extrabold text-white">
+      <div className=" mt-[1rem] rounded-[2rem] bg-overall-bg p-[1rem] s80:mt-[2rem] s80:p-[2rem] overflow-hidden">
+        <motion.h2
+          initial={{ x: "-10px", opacity: 0 }}
+          whileInView={{ x: "0", opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.4 }}
+        className="rounded-[1rem] bg-navy-100 p-4 text-4xl font-extrabold text-white">
           Projects
-        </h2>
+        </motion.h2>
       </div>
 
       <section

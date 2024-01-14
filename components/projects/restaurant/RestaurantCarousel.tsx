@@ -15,14 +15,21 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { Autoplay, Keyboard, Navigation, Scrollbar } from "swiper/modules";
 
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
-export default function KitchenCarousel() {
+export default function RestaurantCarousel() {
   return (
-    <div className="col-span-full max-h-[40rem] overflow-hidden rounded-[1rem]  s60:order-6">
+    <motion.div
+      initial={{ x: "10px", opacity: 0 }}
+      whileInView={{ x: "0", opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.2, duration: 0.4 }}
+      className="col-span-full max-h-[40rem] overflow-hidden rounded-[1rem]  s60:order-6"
+    >
       <Swiper
         spaceBetween={32}
         slidesPerView={1}
@@ -50,7 +57,7 @@ export default function KitchenCarousel() {
           <SlideThree />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </motion.div>
   );
 }
 
