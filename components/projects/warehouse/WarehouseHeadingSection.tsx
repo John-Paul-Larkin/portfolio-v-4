@@ -52,7 +52,7 @@ export default function WarehouseHeadingSection() {
             </Link>
 
             <Link
-              href="https://github.com/Fishamble/wim_back_end"
+              href="https://github.com/John-Paul-Larkin/wim_back_end"
               target="_blank"
               aria-label="link to github of warehouse project"
             >

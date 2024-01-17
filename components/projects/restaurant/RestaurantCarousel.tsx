@@ -125,7 +125,7 @@ function SlideTwo() {
             </Link>
 
             <Link
-              href="https://github.com/Fishamble/kitchen_back_end"
+              href="https://github.com/John-Paul-Larkin/kitchen_back_end"
               // passHref={true}
               target="_blank"
               aria-label="link to github of kitchen display project"
