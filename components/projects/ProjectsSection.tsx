@@ -1,14 +1,10 @@
-import stockTake from "@/public/stockTake.webp";
-import wim from "@/public/wim.png";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import React from "react";
 import KitchenCarousel from "./restaurant/RestaurantCarousel";
 import KitchenHeadingSection from "./restaurant/RestaurantHeadingSection";
 import KitchenImageSection from "./restaurant/RestaurantImageSection";
-import WarehouseHeadingSection from "./warehouse/WarehouseHeadingSection";
-import Link from "next/link";
-import SpaceTourisimSeciton from "./SpaceTourisimSeciton";
+import WarehouseSection from "./warehouse/WarehouseSection";
+import SpaceTourisimSeciton from "./SpaceTourisimSection";
 import JpMazonSection from "./JpMazonSection";
 import CodingQuestionsSection from "./CodingQuestionsSection";
 
@@ -36,39 +32,8 @@ export default function ProjectsSection() {
         <KitchenCarousel />
       </section>
 
-      <section
-        className="mt-[1rem] grid grid-cols-[repeat(8,1fr)] gap-[1rem] 
-        rounded-[2rem] bg-overall-bg p-[1rem] s80:mt-[2rem] s80:gap-[2rem] 
-        
-        s130:grid-rows-[minmax(100px,22rem)_minmax(100px,22rem)]
-       
+      <WarehouseSection />
 
-        "
-      >
-        <WarehouseHeadingSection />
-        <div className="col-span-full flex h-full w-full justify-end  overflow-hidden rounded-[1rem] bg-slate-700 s100:col-span-4">
-          <Image
-            src={stockTake}
-            alt="Man with clipboard counting stock items"
-            className="object-cover"
-          />
-        </div>
-
-        <div className=" s100:object-contain... col-span-full flex h-full w-full overflow-hidden rounded-[1rem] bg-slate-700 s100:col-span-4">
-          <Link
-            href="https://wim-front-end.netlify.app/"
-            target="_blank"
-            aria-label="link to live version of warehouse app"
-            className="h-full w-full"
-          >
-            <Image
-              src={wim}
-              alt="landing page of wim app, with vaious charts and metrics"
-              className="h-full object-cover "
-            />
-          </Link>
-        </div>
-      </section>
       <SpaceTourisimSeciton />
       <JpMazonSection />
       <CodingQuestionsSection />
