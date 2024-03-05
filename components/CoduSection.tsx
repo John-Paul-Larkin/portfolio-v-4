@@ -5,9 +5,6 @@ import Image from "next/image";
 import React from "react";
 
 export default function CoduSection() {
-
-
-
   return (
     <div className="  mt-[1rem] grid grid-cols-[repeat(8,1fr)] grid-rows-1 gap-4 overflow-hidden rounded-[2rem] bg-overall-bg p-[1rem] s85:mt-[2rem] s85:gap-[2rem] s85:p-[2rem]">
       <motion.div
@@ -62,6 +59,7 @@ export default function CoduSection() {
             </div>
 
             <p className="pt-[1rem] text-2xl  font-extrabold text-white ">
+              A{" "}
               <span className=" bg-gradient-to-r from-orange-600 to-red-900 bg-clip-text text-transparent">
                 space
               </span>{" "}
