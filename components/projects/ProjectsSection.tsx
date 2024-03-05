@@ -10,6 +10,7 @@ import WarehouseHeadingSection from "./warehouse/WarehouseHeadingSection";
 import Link from "next/link";
 import SpaceTourisimSeciton from "./SpaceTourisimSeciton";
 import JpMazonSection from "./JpMazonSection";
+import CodingQuestionsSection from "./CodingQuestionsSection";
 
 export default function ProjectsSection() {
   return (
@@ -70,6 +71,7 @@ export default function ProjectsSection() {
       </section>
       <SpaceTourisimSeciton />
       <JpMazonSection />
+      <CodingQuestionsSection />
     </>
   );
 }

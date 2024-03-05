@@ -8,7 +8,7 @@ import OpenIcon from "@/icons/openIcon.svg";
 export default function JpMazonSection() {
   return (
     <section
-      className="mb-[100rem]  mt-[1rem] grid grid-cols-[repeat(8,1fr)] gap-[1rem] 
+      className="mt-[1rem] grid grid-cols-[repeat(8,1fr)] gap-[1rem] 
     rounded-[2rem] bg-overall-bg p-[1rem] s80:mt-[2rem] s80:gap-[2rem]"
     >
       <div className="col-span-full flex h-full w-full overflow-hidden rounded-[1rem] bg-slate-700 s100:col-span-4">
