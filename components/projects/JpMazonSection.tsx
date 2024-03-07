@@ -48,8 +48,8 @@ export default function JpMazonSection() {
           transition={{ delay: 0.3, duration: 0.4 }}
         >
           <p className="mx-[1em] mb-[1em]">
-            This amazon clone was my first React project. I learned the
-            fundamentals of building dynamic user interfaces using React
+            I built this Amazon clone as my first React project. I focused on
+            the fundamentals of building dynamic user interfaces using React
             components, state, and props.
           </p>
 

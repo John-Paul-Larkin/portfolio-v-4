@@ -29,12 +29,13 @@ export default function SpaceTourisimSection() {
           <p className="mx-[1em] mb-[1em]">
             This is my interpretation of a frontend mentor challenge, which you
             can find
+            {" "}
             <Link
               href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3"
               target="_blank"
               aria-label="link to frontend mentor challenge details"
+              className="underline text-blue-700"
             >
-              {" "}
               here.
             </Link>
           </p>

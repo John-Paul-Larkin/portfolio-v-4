@@ -24,15 +24,26 @@ export default function ContactSection() {
           className="flex grow items-center justify-around"
         >
           <div className="">
-            <Email className="h-14 s80:h-10 s100:h-14" />
+            <a href="mailto:johnplarkin@gmail.com">
+              <Email className="h-14 s80:h-10 s100:h-14" />
+            </a>
             <Arrows className=" h-14 w-12 p-3   s80:h-10 s100:h-14" />
-            <Phone className="h-14 s80:h-10 s100:h-14" />
+            <a href="tel:+353863007575">
+              <Phone className="h-14 s80:h-10 s100:h-14" />
+            </a>
           </div>
 
           <div>
-            <LinkedIn className="h-14 s80:h-10 s100:h-14 " />
+            <a
+              href="https://www.linkedin.com/in/john-paul-larkin/"
+              target="_blank"
+            >
+              <LinkedIn className="h-14 s80:h-10 s100:h-14 " />
+            </a>
             <Arrows className="h-14 w-12 rotate-180 p-3 s80:h-10 s100:h-14" />
-            <Github className="h-14 s80:h-10 s100:h-14 " />
+            <a href="https://github.com/john-paul-larkin" target="_blank">
+              <Github className="h-14 s80:h-10 s100:h-14 " />
+            </a>
           </div>
         </motion.div>
       </div>
