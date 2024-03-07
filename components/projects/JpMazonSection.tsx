@@ -17,7 +17,7 @@ export default function JpMazonSection() {
         whileInView={{ x: "0", opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className="col-span-full flex h-full w-full overflow-hidden rounded-[1rem] bg-slate-700 s100:col-span-4"
+        className="order-last col-span-full flex h-full w-full overflow-hidden rounded-[1rem] bg-slate-700 s100:order-first s100:col-span-4"
       >
         <Link
           href="https://jpmazon.netlify.app/"
@@ -38,7 +38,7 @@ export default function JpMazonSection() {
         whileInView={{ x: "0", opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.4 }}
-        className="h-[30rem]... paragraph-text col-span-full rounded-[1rem] bg-yellow-300 s100:col-span-4"
+        className="h-[30rem]... paragraph-text order-first col-span-full rounded-[1rem] bg-yellow-300 s100:col-span-4"
       >
         <h3 className="m-[1em] text-[1.3em] font-semibold">JPMazon</h3>
         <motion.div
@@ -60,7 +60,7 @@ export default function JpMazonSection() {
           </p>
         </motion.div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-4">
           <div className="flex w-[4em] justify-between ">
             <Link
               href="https://jpmazon.netlify.app/"

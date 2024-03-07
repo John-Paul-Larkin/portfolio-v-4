@@ -38,7 +38,7 @@ export default function CodingQuestionsSection() {
           </p>
         </motion.div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-4">
           <div className="flex w-[4em] justify-between ">
             <Link
               href="https://jsqapp.netlify.app/"

@@ -46,7 +46,7 @@ export default function SpaceTourisimSection() {
           </p>
         </motion.div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-4">
           <div className="flex w-[4em] justify-between ">
             <Link
               href="https://fem-space-tourism-website-beryl.vercel.app/"
