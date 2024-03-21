@@ -28,7 +28,7 @@ export default function ContactSection() {
               <Email className="h-14 s80:h-10 s100:h-14" />
             </a>
             <Arrows className=" h-14 w-12 p-3   s80:h-10 s100:h-14" />
-            <a href="tel:+353863007575">
+            <a href="tel:+35386">
               <Phone className="h-14 s80:h-10 s100:h-14" />
             </a>
           </div>
